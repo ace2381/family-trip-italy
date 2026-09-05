@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>המדריך המשפחתי המלא למשפחת ברק ואלטר - צפון איטליה ושווייץ</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        itaGreen: '#008C45',       // Verde Italiano
+                        itaGreenDark: '#0b5930',   // Forest Green
+                        itaRed: '#CD212A',         // Rosso Corsa / Terracotta
+                        itaRedDark: '#991b1b',     // Deep Rosso
+                        itaCream: '#fbfaf6',       // Warm Bianco
+                        accent: '#0284c7',         // Lago Blue
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+            background-color: #fbfaf6;
+            color: #1c1917;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Italian Tricolor Top Ribbon */
+        .tricolor-stripe {
+            height: 4px;
+            background: linear-gradient(to right, #008C45 0%, #008C45 33.3%, #ffffff 33.3%, #ffffff 66.6%, #CD212A 66.6%, #CD212A 100%);
+        }
+
+        .tab-btn.active {
+            background-color: #008C45;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 140, 69, 0.3);
+            border-color: #008C45;
+        }
+
+        /* Smooth mobile scrollbar */
+        .custom-scrollbar {
+            -webkit-overflow-scrolling: touch;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 4px;
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 8px;
+        }
+
+        .badge-soft {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.65rem;
+            border-radius: 9999px;
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-emerald-200">
+
+    <!-- Top Flag Ribbon -->
+    <div class="tricolor-stripe w-full sticky top-0 z-50"></div>
+
+    <!-- Header Section (Italian Forest Green Gradient) -->
+    <header class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-stone-900 text-emerald-50 shadow-lg border-b border-emerald-800/80 sticky top-[4px] z-40">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 lg:px-8 py-3.5 sm:py-5">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3.5">
+                <div>
+                    <div class="flex flex-wrap items-center gap-1.5 text-emerald-300 text-[11px] sm:text-xs font-semibold mb-1">
+                        <a href="https://maps.google.com/?cid=2354751992871040838" target="_blank" class="bg-emerald-800/80 hover:bg-emerald-700 px-2 py-0.5 rounded-md border border-emerald-700/60 transition-colors inline-flex items-center gap-1">🇮🇹 אגם גארדה (Bel Sito) ↗</a>
+                        <span>•</span>
+                        <a href="https://maps.google.com/?cid=1541251552133558887" target="_blank" class="bg-emerald-800/80 hover:bg-emerald-700 px-2 py-0.5 rounded-md border border-emerald-700/60 transition-colors inline-flex items-center gap-1">🇮🇹 אגם מאג'ורה (Elvezia) ↗</a>
+                        <span>•</span>
+                        <span class="bg-red-900/60 text-red-200 px-2 py-0.5 rounded-md border border-red-700/60">🇨🇭 שווייץ</span>
+                    </div>
+                    <h1 class="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                        <span>🇮🇹</span>
+                        <span>המדריך המשפחתי המלא למשפחת ברק ואלטר: צפון איטליה ושווייץ</span>
+                    </h1>
+                    <p class="text-emerald-200/90 text-xs sm:text-sm mt-1">
+                        12 ימים (11–22 בספטמבר) • מותאם לסבים, ילדים, וואן סיטרואן ספייס-טורר ופז'ו 5008
+                    </p>
+                </div>
+                
+                <!-- Quick Info Widget -->
+                <div class="flex items-center gap-2 sm:gap-3 bg-stone-900/80 backdrop-blur-sm p-2 sm:p-2.5 rounded-xl border border-emerald-600/40 text-xs self-start md:self-auto shrink-0 shadow-inner">
+                    <div class="text-center px-2">
+                        <span class="block font-black text-emerald-400 text-sm sm:text-base">12</span>
+                        <span class="text-[10px] text-emerald-200/80">ימי מסלול</span>
+                    </div>
+                    <div class="h-6 w-px bg-emerald-700/60"></div>
+                    <div class="text-center px-2">
+                        <span class="block font-black text-amber-400 text-sm sm:text-base">34</span>
+                        <span class="text-[10px] text-emerald-200/80">מסעדות מומלצות</span>
+                    </div>
+                    <div class="h-6 w-px bg-emerald-700/60"></div>
+                    <div class="text-center px-2">
+                        <span class="block font-black text-red-400 text-sm sm:text-base">2</span>
+                        <span class="text-[10px] text-emerald-200/80">רכבים שכורים</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav class="bg-white border-b border-stone-200 sticky top-[72px] sm:top-[88px] z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex space-x-1.5 space-x-reverse py-2.5 overflow-x-auto custom-scrollbar">
+                <button onclick="switchMainTab('itinerary')" id="tab-btn-itinerary" class="tab-btn active px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm transition-all whitespace-nowrap flex items-center gap-1.5 border border-transparent min-h-[42px] touch-manipulation">
+                    <span>🗓️</span> מסלול יומי ושעות (12 יום)
+                </button>
+                <button onclick="switchMainTab('restaurants')" id="tab-btn-restaurants" class="tab-btn px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 border border-stone-200 min-h-[42px] touch-manipulation">
+                    <span>🍽️</span> מסעדות וגלידריות (34)
+                </button>
+                <button onclick="switchMainTab('rental')" id="tab-btn-rental" class="tab-btn px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 border border-stone-200 min-h-[42px] touch-manipulation">
+                    <span>🚗</span> השכרת רכב וחניה לוואן
+                </button>
+                <button onclick="switchMainTab('gardaland')" id="tab-btn-gardaland" class="tab-btn px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 border border-stone-200 min-h-[42px] touch-manipulation">
+                    <span>🎢</span> גארדלנד ורכבת לוורונה
+                </button>
+                <button onclick="switchMainTab('tickets')" id="tab-btn-tickets" class="tab-btn px-3 sm:px-4 py-2 rounded-xl font-bold text-xs sm:text-sm text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 border border-stone-200 min-h-[42px] touch-manipulation">
+                    <span>🎟️</span> מדריך כרטיסים ושיט
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6">
+
+        <!-- ========================================================================= -->
+        <!-- TAB 1: FULL DAY-BY-DAY ITINERARY WITH HOURLY SCHEDULE & HIGHLIGHTS -->
+        <!-- ========================================================================= -->
+        <section id="view-itinerary" class="space-y-4 sm:space-y-6">
+
+            <!-- Day Selector Bar (Mobile Grid Optimized) -->
+            <div class="bg-white p-3.5 sm:p-4 rounded-2xl border border-stone-200 shadow-sm">
+                <div class="flex items-center justify-between mb-2.5">
+                    <h2 class="text-xs sm:text-sm font-bold text-stone-800 flex items-center gap-1.5">
+                        <span>🗓️</span> בחרו יום במסלול:
+                    </h2>
+                    <span class="badge-soft bg-emerald-100 text-emerald-900 border border-emerald-200" id="itinerary-current-region-badge">אגם גארדה</span>
+                </div>
+                <!-- 12 Days Grid (Target for JS renderItineraryDaysBar) -->
+                <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-12 gap-1.5" id="itinerary-days-bar">
+                    <!-- Populated dynamically by JS -->
+                </div>
+            </div>
+
+            <!-- Active Day Details Container (Target for JS selectItineraryDay) -->
+            <div id="itinerary-day-detail-container" class="space-y-4 sm:space-y-6">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TAB 2: RESTAURANTS & CULINARY DIRECTORY (34 SPOTS) -->
+        <!-- ========================================================================= -->
+        <section id="view-restaurants" class="space-y-4 sm:space-y-6 hidden">
+            <!-- Search & Filters -->
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-stone-200 shadow-sm space-y-3.5">
+                <div class="flex flex-col sm:flex-row gap-2.5">
+                    <div class="relative flex-grow">
+                        <input type="text" id="food-search-input" oninput="filterRestaurants()" placeholder="חיפוש מסעדה, עיר, מנה (שניצל, פיצה, טורטליני, המבורגר, גלידה)..." class="w-full pl-4 pr-10 py-2.5 sm:py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 text-xs sm:text-sm bg-stone-50/50">
+                        <span class="absolute left-3 top-3 text-stone-400">🔍</span>
+                    </div>
+                </div>
+
+                <!-- Filters Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs">
+                    <div>
+                        <label class="block font-bold text-stone-700 mb-1">סוג ארוחה</label>
+                        <select id="food-filter-meal" onchange="filterRestaurants()" class="w-full p-2 rounded-lg border border-stone-300 bg-white font-medium">
+                            <option value="all">כל הארוחות</option>
+                            <option value="בוקר">בוקר / קפה</option>
+                            <option value="צהריים">ארוחת צהריים</option>
+                            <option value="ערב">ארוחת ערב</option>
+                            <option value="גלידה/קינוח">גלידריית בוטיק / קינוח</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-stone-700 mb-1">סגנון קולינרי</label>
+                        <select id="food-filter-style" onchange="filterRestaurants()" class="w-full p-2 rounded-lg border border-stone-300 bg-white font-medium">
+                            <option value="all">כל הסגנונות</option>
+                            <option value="איטלקי קלאסי">איטלקי (פיצה/פסטה)</option>
+                            <option value="אמריקאי / פאב">אמריקאי (המבורגר/שניצל)</option>
+                            <option value="קפה ומאפה">קפה ומאפה</option>
+                            <option value="גלידריית בוטיק">גלידריות ענק / בוטיק</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-stone-700 mb-1">אזור / אגם</label>
+                        <select id="food-filter-region" onchange="filterRestaurants()" class="w-full p-2 rounded-lg border border-stone-300 bg-white font-medium">
+                            <option value="all">כל האזורים</option>
+                            <option value="אגם גארדה">אגם גארדה</option>
+                            <option value="אגם מאג'ורה">אגם מאג'ורה</option>
+                            <option value="שווייץ">שווייץ (אסקונה)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block font-bold text-stone-700 mb-1">סינון לפי יום</label>
+                        <select id="food-filter-day" onchange="filterRestaurants()" class="w-full p-2 rounded-lg border border-stone-300 bg-white font-medium">
+                            <option value="all">כל הימים (1–12)</option>
+                            <option value="1">יום 1 - פסקיירה</option>
+                            <option value="2">יום 2 - סירמיונה</option>
+                            <option value="3">יום 3 - לאזיזה ובורגטו</option>
+                            <option value="4">יום 4 - גארדלנד</option>
+                            <option value="5">יום 5 - ריבה דל גארדה</option>
+                            <option value="6">יום 6 - ורונה</option>
+                            <option value="7">יום 7 - מעבר לבאבנו</option>
+                            <option value="8">יום 8 - האיים הבורומאיים</option>
+                            <option value="9">יום 9 - מוטרונה</option>
+                            <option value="10">יום 10 - שווייץ</option>
+                            <option value="11">יום 11 - אגם אורטה</option>
+                            <option value="12">יום 12 - וולנדיה וטיסה</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between text-xs text-stone-500 pt-2 border-t border-stone-100">
+                    <span id="food-catalog-counter" class="font-bold text-emerald-950">מציג 34 מקומות</span>
+                    <button onclick="resetFoodFilters()" class="text-emerald-700 hover:underline font-bold">איפוס סינונים ↺</button>
+                </div>
+            </div>
+
+            <!-- Food Cards Container (Target for JS filterRestaurants) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4" id="food-grid-container">
+                <!-- Dynamically populated by JS -->
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TAB 3: CAR RENTAL & VAN PARKING PROTOCOL -->
+        <!-- ========================================================================= -->
+        <section id="view-rental" class="space-y-4 sm:space-y-6 hidden">
+            <!-- Noleggiare Procedure Box -->
+            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                <div class="border-b border-stone-100 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                    <div>
+                        <span class="badge-soft bg-emerald-700 text-white">נוהל רשמי</span>
+                        <h3 class="text-base sm:text-xl font-black text-stone-900 mt-1">השכרת רכב: סוכנות Noleggiare נמל התעופה מלפנסה (MXP)</h3>
+                    </div>
+                    <a href="tel:+393349486716" class="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-3 py-2 rounded-xl transition-all self-start sm:self-auto touch-manipulation min-h-[40px]">
+                        <span>📞 חיוג לשאטל:</span>
+                        <span dir="ltr" class="font-mono text-sm">+39-334-9486716</span>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 text-xs sm:text-sm">
+                    <!-- Step 1: Pick-up -->
+                    <div class="bg-emerald-50/80 p-4 rounded-xl border border-emerald-200 space-y-2">
+                        <h4 class="font-bold text-emerald-950 flex items-center gap-1.5 text-sm">
+                            <span>🛬</span> נוהל לקיחה (11/09 בשעה 14:00)
+                        </h4>
+                        <ol class="list-decimal list-inside space-y-1.5 text-emerald-900 leading-relaxed text-xs">
+                            <li>נוחתים, אוספים מזוודות ועולים לקומת ההמראות (Departures) בטרמינל 1.</li>
+                            <li><strong>מחייגים למספר: <span dir="ltr" class="font-bold">+39-334-9486716</span></strong> ומודיעים שאתם ממתינים לשאטל.</li>
+                            <li>יוצאים מחוץ לטרמינל וממתינים <strong>ליד דלת מס' 18 (טרמינל 1)</strong>.</li>
+                            <li>שאטל ממותג 'Noleggiare' יאסוף אתכם לסניף (Via Facchinetti 51, כ-5 דק' נסיעה).</li>
+                            <li>חתימה על חוזים, צילום וידאו Walkaround סביב הוואן וה-SUV, ויציאה לפסקיירה.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Step 2: Return -->
+                    <div class="bg-amber-50/80 p-4 rounded-xl border border-amber-200 space-y-2">
+                        <h4 class="font-bold text-amber-950 flex items-center gap-1.5 text-sm">
+                            <span>🛫</span> נוהל החזרה (22/09 בשעה 13:00 בדיוק)
+                        </h4>
+                        <ol class="list-decimal list-inside space-y-1.5 text-amber-900 leading-relaxed text-xs">
+                            <li>מבקרים במוזיאון Volandia הצמוד לשדה בבוקר ללא לחץ פקקים.</li>
+                            <li>תדלוק מלא של שני הרכבים בתחנת דלק בסומה לומברדו (3 דקות מהסוכנות) ושמירת קבלה.</li>
+                            <li>הגעה למגרש Noleggiare ב-<strong>Via Cipriano Facchinetti, 51</strong> בשעה 12:45–13:00.</li>
+                            <li>בדיקת רכבים מהירה וקבלת אישור סגירת חוזה תקין (Check-in Closed / 0 Damage).</li>
+                            <li>עלייה לשאטל שלוקח את כל המשפחה ישירות לקומת ההמראות תוך 5 דקות.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Important Rental Policies -->
+                <div class="bg-stone-50 p-4 rounded-xl border border-stone-200 space-y-2 text-xs">
+                    <h4 class="font-bold text-stone-900 text-xs sm:text-sm">📌 דגשים קריטיים, אותיות קטנות וביטוחים ב-Noleggiare:</h4>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-stone-700">
+                        <li class="flex items-start gap-1.5">
+                            <span class="text-emerald-700 font-bold">✓</span>
+                            <span><strong>ביטוח Platinum Coverage מומלץ:</strong> ביטול השתתפות עצמית מלא (Zero Excess) על שמשות, גלגלים, פח, גניבה ותחתית הרכב. מוריד את הפיקדון הנחסם לסכום סמלי (€100–€300) וחוסך דאגות.</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <span class="text-emerald-700 font-bold">✓</span>
+                            <span><strong>היתר מעבר לשווייץ (Cross Border):</strong> חובה להצהיר בדלפק ביום האיסוף על הנסיעה לשווייץ ב-20/09 ולרכוש Cross Border Card (כ-€10-€12 ליום) לשמירה על תוקף הביטוח.</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <span class="text-emerald-700 font-bold">✓</span>
+                            <span><strong>רישיונות נהיגה בינלאומיים מנייר:</strong> חובה להציג גם רישיון פלסטיק ישראלי מקורי וגם רישיון בינלאומי מנייר (ממס"י/טלדור) לכל נהג.</span>
+                        </li>
+                        <li class="flex items-start gap-1.5">
+                            <span class="text-emerald-700 font-bold">✓</span>
+                            <span><strong>כרטיסי אשראי פיזיים:</strong> חובה כרטיס אשראי בינלאומי פיזי עם ספרות בולטות (אין אפשרות ל-Apple Pay/Google Pay בפיקדון) על שם שני נהגים ראשיים שונים.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Master Open-Air Parking Table -->
+            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-sm sm:text-base font-bold text-stone-900">🅿️ טבלת חניוני שטח פתוחים (ללא מגבלת גובה לוואן)</h3>
+                        <p class="text-xs text-stone-500">כל החניונים נבדקו כמגרשי שטח פתוחים (Parcheggi a raso) מחוץ לאזורי ZTL</p>
+                    </div>
+                </div>
+
+                <div class="overflow-x-auto custom-scrollbar">
+                    <table class="w-full text-right text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-emerald-800 text-white font-bold">
+                                <th class="p-2.5 rounded-tr-lg">יעד / יום</th>
+                                <th class="p-2.5">שם החניון</th>
+                                <th class="p-2.5">סוג החניה</th>
+                                <th class="p-2.5">עלות משוערת</th>
+                                <th class="p-2.5 rounded-tl-lg">הערות נגישות לוואן ולסבים</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-200">
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">מלון Bel Sito פסקיירה</td>
+                                <td class="p-2.5">חצר המלון (Via Venezia 62)</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח ללא גובה</span></td>
+                                <td class="p-2.5 text-emerald-700 font-bold">חינם לאורחים</td>
+                                <td class="p-2.5">חניה צמודה לחדרים, מרווחת ומישורית. מתאימה לוואן.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">סירמיונה (יום 2)</td>
+                                <td class="p-2.5">Parcheggio Monte Baldo</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח ללא גובה</span></td>
+                                <td class="p-2.5">כ-€2.5 לשעה</td>
+                                <td class="p-2.5">מגרש ענק לפני החומות. הליכה מישורית של 5 דקות למבצר.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">לאזיזה (יום 3)</td>
+                                <td class="p-2.5">Parcheggio Marra</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח ללא גובה</span></td>
+                                <td class="p-2.5">כ-€2.0 לשעה</td>
+                                <td class="p-2.5">מחוץ לחומות העתיקות. גישה ישירה ומישורית לטיילת הגלים.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">פארק גארדלנד (יום 4)</td>
+                                <td class="p-2.5">חניון השטח של Gardaland</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח ענק</span></td>
+                                <td class="p-2.5">כ-€6–€10 ליום</td>
+                                <td class="p-2.5">פתוח מ-09:00. אספלט מסודר ישירות לקופות ולשער הראשי.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">מפלי ורונה (יום 5)</td>
+                                <td class="p-2.5">חניון הכניסה למפלים</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח ללא גובה</span></td>
+                                <td class="p-2.5 text-emerald-700 font-bold">חינם למבקרים</td>
+                                <td class="p-2.5">צמוד ממש לקופת האתר ולשבילי גשרי העץ.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">סטרזה (האיים הבורומאיים)</td>
+                                <td class="p-2.5">Piazza Marconi</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח על האגם</span></td>
+                                <td class="p-2.5">כ-€1.5–€2 לשעה</td>
+                                <td class="p-2.5">מול רציפי הסירות והמעבורות. אפס מדרגות.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-emerald-950">פסגת מונטה מוטרונה</td>
+                                <td class="p-2.5">Parcheggio Vetta Mottarone</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">פתוח ללא גובה</span></td>
+                                <td class="p-2.5 text-emerald-700 font-bold">כלול באגרה</td>
+                                <td class="p-2.5">מרחק 50 מטר ממגלשות Alpyland ומבית הקפה הפנורמי.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TAB 4: GARDALAND THEME PARK & VERONA BY TRAIN -->
+        <!-- ========================================================================= -->
+        <section id="view-gardaland" class="space-y-4 sm:space-y-6 hidden">
+            <!-- Gardaland Guide -->
+            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-3">
+                    <div>
+                        <span class="badge-soft bg-emerald-700 text-white">יום שני 14 בספטמבר</span>
+                        <h3 class="text-base sm:text-xl font-black text-stone-900 mt-1">פארק גארדלנד (Gardaland): מדריך האקשן המשפחתי</h3>
+                    </div>
+                    <a href="https://www.gardaland.it" target="_blank" class="inline-flex items-center gap-1 bg-red-700 hover:bg-red-800 text-white text-xs font-bold px-3 py-2 rounded-xl transition-all self-start sm:self-auto touch-manipulation min-h-[40px]">
+                        <span>כרטיסים מוזלים באתר הרשמי</span> ↗
+                    </a>
+                </div>
+
+                <!-- Gardaland Split Strategy -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 text-xs sm:text-sm">
+                    <div class="bg-red-50/70 p-4 rounded-xl border border-red-200 space-y-2">
+                        <h4 class="font-bold text-red-950 flex items-center gap-1.5 text-sm">
+                            <span>🎢</span> מסלול אקסטרים (הורים וילדים):
+                        </h4>
+                        <ul class="space-y-1.5 text-red-900 text-xs">
+                            <li><strong>10:00:</strong> רצים ראשונים לרכבת <strong>Mammut</strong> (תור קצר בבוקר).</li>
+                            <li><strong>10:45:</strong> רכבת הצלילה האנכית <strong>Oblivion</strong> ורכבת <strong>Shaman</strong>.</li>
+                            <li><strong>14:30:</strong> מתקני מים מרעננים: <strong>Fuga da Atlantide</strong> ו-<strong>Jungle Rapids</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-emerald-50/70 p-4 rounded-xl border border-emerald-200 space-y-2">
+                        <h4 class="font-bold text-emerald-950 flex items-center gap-1.5 text-sm">
+                            <span>👵</span> מסלול נינוח (סבים וקטנטנים):
+                        </h4>
+                        <ul class="space-y-1.5 text-emerald-900 text-xs">
+                            <li><strong>רכבת פנורמית Transgardaland Express:</strong> סיור בישיבה נינוחה סביב הפארק.</li>
+                            <li><strong>אזור Peppa Pig Land:</strong> מתקנים מתונים וקרוסלת הסוסים ההיסטורית.</li>
+                            <li><strong>צהריים ממוזגים:</strong> מסעדת Saloon וצפייה במופעים באולמות הסגורים (מנוחה מלאה).</li>
+                            <li><strong>Gardaland SEA LIFE:</strong> סיור ממוזג ומישורי באקווריום הצמוד.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Height Restrictions Table -->
+                <div class="overflow-x-auto custom-scrollbar">
+                    <table class="w-full text-right text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-stone-900 text-white font-bold">
+                                <th class="p-2.5 rounded-tr-lg">שם המתקן</th>
+                                <th class="p-2.5">מתחם</th>
+                                <th class="p-2.5">מגבלת גובה</th>
+                                <th class="p-2.5 rounded-tl-lg">מאפיינים וקהל יעד</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-200">
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Peppa Pig Land</td><td class="p-2.5">Fantasy</td><td class="p-2.5 text-emerald-700 font-bold">ללא מגבלה</td><td class="p-2.5">מתחם מונפש לקטנטנים עם סירות ורכבות קטנות.</td></tr>
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Transgardaland Express</td><td class="p-2.5">Fantasy</td><td class="p-2.5 text-emerald-700 font-bold">ללא מגבלה (בליווי)</td><td class="p-2.5">רכבת פנורמית היסטורית המקיפה את הפארק בישיבה.</td></tr>
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Mammut</td><td class="p-2.5">Adventure</td><td class="p-2.5 font-bold text-amber-700">מינימום 100 ס"מ</td><td class="p-2.5">רכבת הרים משפחתית מתונה ומלהיבה.</td></tr>
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Fuga da Atlantide</td><td class="p-2.5">Adventure</td><td class="p-2.5 font-bold text-amber-700">מינימום 110 ס"מ</td><td class="p-2.5">רכבת מים ענקית עם ירידות רטובות ותפאורה מרהיבה.</td></tr>
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Jungle Rapids</td><td class="p-2.5">Adventure</td><td class="p-2.5 font-bold text-amber-700">ליווי מתחת 130 ס"מ</td><td class="p-2.5">שיט אבובים במסלול נהר גועש בין מפלים.</td></tr>
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Shaman</td><td class="p-2.5">Adrenaline</td><td class="p-2.5 font-bold text-red-700">מינימום 120 ס"מ</td><td class="p-2.5">רכבת הרים קלאסית עם שני היפוכים מלאים.</td></tr>
+                            <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Oblivion: The Black Hole</td><td class="p-2.5">Adrenaline</td><td class="p-2.5 font-bold text-red-700">מינימום 140 ס"מ</td><td class="p-2.5">רכבת צלילה אנכית בזווית 90 מעלות לחובבי אקסטרים.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Verona Train Guide -->
+            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
+                <div class="border-b border-stone-100 pb-3">
+                    <span class="badge-soft bg-emerald-700 text-white">יום רביעי 16 בספטמבר</span>
+                    <h3 class="text-base sm:text-xl font-black text-stone-900 mt-1">רכבת ישירה מפסקיירה לוורונה (13 דקות נסיעה בלבד!)</h3>
+                    <p class="text-xs text-stone-500 mt-0.5">הפתרון החכם ביותר: מונע פקקים, בעיות חניה לוואן הגבוה וקנסות ZTL</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm">
+                    <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                        <h4 class="font-bold text-stone-900 mb-1">🚉 תחנות וזמנים:</h4>
+                        <p class="text-stone-700 text-xs">מתחנת <strong>Stazione di Peschiera</strong> (3 דקות מהמלון שלכם) ישירות לתחנת <strong>Verona Porta Nuova</strong>. רכבות יוצאות כל 15–20 דקות.</p>
+                    </div>
+                    <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                        <h4 class="font-bold text-stone-900 mb-1">🎫 כרטיסים ועלות:</h4>
+                        <p class="text-stone-700 text-xs">כ-€4–€5 לאדם לכיוון. רוכשים באפליקציית Trenitalia / Trainline או במכונות האוטומטיות בתחנה.</p>
+                    </div>
+                    <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                        <h4 class="font-bold text-stone-900 mb-1">🚕 הגעה ל-Piazza Bra והארנה:</h4>
+                        <p class="text-stone-700 text-xs">מונית רשמית מחוץ לתחנה (Radio Taxi Verona) בנסיעה של 4 דקות ישירות לכיכר (€8–€12 למונית), או קווי אוטובוס 11/12/13.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- TAB 5: TICKETS & BOAT SERVICES -->
+        <!-- ========================================================================= -->
+        <section id="view-tickets" class="space-y-4 sm:space-y-6 hidden">
+            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                <div>
+                    <h3 class="text-base sm:text-xl font-black text-stone-900">מדריך רכישת כרטיסים וחברות שיט מומלצות</h3>
+                    <p class="text-xs sm:text-sm text-stone-500 mt-1">ריכוז כל האטרקציות: היכן מומלץ להזמין מראש והיכן לקנות בקופה במקום</p>
+                </div>
+
+                <div class="overflow-x-auto custom-scrollbar">
+                    <table class="w-full text-right text-xs border-collapse">
+                        <thead>
+                            <tr class="bg-emerald-900 text-white font-bold">
+                                <th class="p-2.5 rounded-tr-lg">אטרקציה / אתר</th>
+                                <th class="p-2.5">היכן מזמינים?</th>
+                                <th class="p-2.5">להזמין מראש?</th>
+                                <th class="p-2.5 rounded-tl-lg">דגשים חשובים והנחיות לוגיסטיות</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-stone-200">
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">פארק גארדלנד (Gardaland)</td>
+                                <td class="p-2.5">אתר רשמי: gardaland.it</td>
+                                <td class="p-2.5"><span class="badge-soft bg-red-100 text-red-800">חובה מראש</span></td>
+                                <td class="p-2.5">מוזל משמעותית ממחיר הקופה וחוסך תור בכניסה. מומלץ להוריד את אפליקציית הפארק.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">פארק סיגורטה (Sigurtà)</td>
+                                <td class="p-2.5">אתר רשמי: sigurta.it</td>
+                                <td class="p-2.5"><span class="badge-soft bg-amber-100 text-amber-800">מומלץ כרטיס</span></td>
+                                <td class="p-2.5"><strong>רכבי גולף חשמליים:</strong> שוכרים ישירות בקופת ההשכרה בכניסה לפי זמינות (לא באינטרנט).</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">שיט סביב סירמיונה</td>
+                                <td class="p-2.5">ברציף ליד המבצר (Consorzio Motoscafisti)</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">במקום בלבד</span></td>
+                                <td class="p-2.5">סוגרים "סיור חצי אי" (Tour della Penisola) בעלות כ-€10–€12 לאדם או סירה פרטית למשפחה.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">האיים הבורומאיים (ארמון וגנים)</td>
+                                <td class="p-2.5">אתר רשמי: isoleborromee.it</td>
+                                <td class="p-2.5"><span class="badge-soft bg-amber-100 text-amber-800">מומלץ יום-יומיים</span></td>
+                                <td class="p-2.5">כרטיס משולב לארמון הבארוק ולגנים (Palazzo e Giardino Isola Bella). מעליות למוגבלי תנועה.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">שיט לאיים (איזולה בלה ודייגים)</td>
+                                <td class="p-2.5">מוניות מים CMA / Stresa Boat ברציף</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">במקום בלבד</span></td>
+                                <td class="p-2.5">כרטיס Hop-On Hop-Off לשני האיים. סירות יוצאות כל 15–20 דקות. יציאה מסטרזה או מבאבנו.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">מגלשות הרים Alpyland (מוטרונה)</td>
+                                <td class="p-2.5">בקופות האתר בפסגת ההר</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">במקום בלבד</span></td>
+                                <td class="p-2.5">קונים כרטיסי נסיעה לפי מספר הסיבובים שתרצו. מופעל ברציפות.</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">מנזר סנטה קתרינה (מעלית סלע)</td>
+                                <td class="p-2.5">בקופת הכניסה בחניון העליון</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">במקום בלבד</span></td>
+                                <td class="p-2.5">קונים כרטיס משולב כניסה + מעלית חצובה בסלע (חוסכת 270 מדרגות באופן מלא).</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">מופע עופות דורסים (Falconeria)</td>
+                                <td class="p-2.5">אתר: falconeria.ch או בקופה</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">אפשר בקופה</span></td>
+                                <td class="p-2.5">להגיע ב-10:20 כדי לתפוס מקומות ישיבה מוצלים לקראת המופע של 11:00. דרכונים חובה!</td>
+                            </tr>
+                            <tr class="hover:bg-stone-50">
+                                <td class="p-2.5 font-bold text-stone-900">מוזיאון התעופה Volandia</td>
+                                <td class="p-2.5">בקופת המוזיאון בכניסה</td>
+                                <td class="p-2.5"><span class="badge-soft bg-emerald-100 text-emerald-800">במקום בלבד</span></td>
+                                <td class="p-2.5">כניסה ישירה ללא תורים. מתחמים ממוזגים ומשחקייה לילדים ביום הטיסה.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Italian Tricolor Style) -->
+    <footer class="bg-stone-950 text-stone-400 text-xs py-8 mt-12 border-t-4 border-t-emerald-700">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+            <p class="text-stone-200 font-bold text-sm">המדריך המשפחתי המלא למשפחת ברק ואלטר • צפון איטליה ושווייץ 🇮🇹🇨🇭</p>
+            <p>מלונות: <a href="https://maps.google.com/?cid=2354751992871040838" target="_blank" class="text-emerald-400 hover:underline">Hotel Bel Sito (פסקיירה) ↗</a> &amp; <a href="https://maps.google.com/?cid=1541251552133558887" target="_blank" class="text-emerald-400 hover:underline">Elvezia Boutique (באבנו) ↗</a> • השכרת רכב: Noleggiare מלפנסה</p>
+            <p class="text-stone-500">מותאם באופן מלא לנייד, לוואן Citroën SpaceTourer ול-Peugeot 5008</p>
+        </div>
+    </footer>
+
+    <script>
+        // Master Itinerary Data with exact hours, drive times, activities and parking
+        const itineraryData = [
+            {
+                day: 1,
+                date: "11 בספטמבר (יום ו')",
+                title: "נחיתה במילאנו מלפנסה והתאקלמות בפסקיירה",
+                region: "אגם גארדה",
+                hotel: "Hotel Bel Sito Peschiera (Via Venezia 62)",
+                hotelMapUrl: "https://maps.google.com/?cid=2354751992871040838",
+                hours: { depart: "איסוף רכב: 14:00", returnTime: "הגעה למלון: 16:45", driveTotal: "כשעתיים (175 ק\"מ)" },
+                weather: {
+                    icon: "☀️",
+                    tempDay: "26°C",
+                    tempNight: "16°C",
+                    condition: "שמשי ונעים",
+                    clothing: "חולצה קצרה ומכנסיים נוחים לטיסה ולנסיעה; עליונית קלה או סריג דק לשעות הערב בטיילת מול רוח האגם.",
+                    packingTip: "הכינו בתיק העלייה למטוס ג'קט קל לשעות הערב בפסקיירה."
+                },
+                summary: "נחיתה במלפנסה, איסוף שני הרכבים מ-Noleggiare, נסיעה ישרה מזרחה על כביש A4 לפסקיירה, פריקת מזוודות וארוחת ערב רגועה על קו המים.",
+                grandparents: "הטיילת של פסקיירה רחבה, מרוצפת ושטוחה לחלוטין ללא מדרגות. המלון נמצא במרחק קצרצר ומסעדת הערב צמודה ברגל.",
+                kids: "שחרור אנרגיה במרחבים הפתוחים ובגני המשחקים על קו המים אחרי הטיסה, צפייה בברווזים באגם.",
+                parking: "חניה פתוחה וחינמית בחצר מלון Bel Sito (מתאימה בדיוק לוואן הגבוה). אפס לחץ חניה בערב.",
+                timeline: [
+                    { time: "13:00 - 14:00", desc: "נחיתה במלפנסה, איסוף מזוודות, עולים לקומת המראות לדלת 18, מחייגים לשאטל Noleggiare (+39-334-9486716)." },
+                    { time: "14:00 - 14:45", desc: "הגעה לסניף Noleggiare (Via Facchinetti 51), חתימה על חוזים, בדיקת רכבים ווידאו Walkaround, ויציאה לדרך." },
+                    { time: "14:45 - 16:45", desc: "נסיעה רציפה על אוטוסטרדה A4 ישירות ל-Hotel Bel Sito בפסקיירה (שעתיים נסיעה, 175 ק\"מ)." },
+                    { time: "16:45 - 18:00", desc: "צ'ק-אין, חניה במלון, פריקת מזוודות ומנוחה בחדרים." },
+                    { time: "18:00 - 20:30", desc: "יציאה רגלית נינוחה לטיילת פסקיירה וארוחת ערב ראשונה במסעדת Sosta e Gusta (3 דקות מהמלון)." },
+                    { time: "20:30", desc: "חזרה למלון למנוחת לילה ראשונה (אפס נהיגה בערב)." }
+                ]
+            },
+            {
+                day: 2,
+                date: "12 בספטמבר (יום שבת)",
+                title: "סירמיונה: גלידות ענק, מבצר מים ושיט משפחתי",
+                region: "אגם גארדה",
+                hotel: "Hotel Bel Sito Peschiera",
+                hotelMapUrl: "https://maps.google.com/?cid=2354751992871040838",
+                hours: { depart: "יציאה: 09:30", returnTime: "חזרה למלון: 17:00", driveTotal: "כ-50 דקות הלוך-חזור (24 ק\"מ)" },
+                weather: {
+                    icon: "☀️",
+                    tempDay: "26°C",
+                    tempNight: "16°C",
+                    condition: "בהיר וחמים",
+                    clothing: "בגדי קיץ קלים, כובע שמש, משקפי שמש ונעלי הליכה נוחות למדרחוב; ג'קט דק לשיט בסירה המהירה.",
+                    packingTip: "רוח האגם במהלך השיט המהיר יכולה להיות קרירה – קחו צעיף דק או עליונית לסבים."
+                },
+                summary: "ביקור בחצי האי המפורסם סירמיונה, הקפת חצי האי בסירת מנוע מהירה, צילומים ליד המבצר, גלידות ענק מפורסמות וטיילת מוצלת.",
+                grandparents: "המדרחוב העתיק סגור לחלוטין לרכבים ומישורי. השיט בסירה מעניק מנוחה מלאה בישיבה ללא מאמץ פיזי.",
+                kids: "שיט כיפי ומהיר בסירת מנוע באגם, גביעי גלידת ענק עם עשרות טעמים בג'לאטריות של סירמיונה.",
+                parking: "Parcheggio Monte Baldo - חניון שטח פתוח ענק ללא מגבלת גובה. הליכה מישורית של 5 דקות למבצר.",
+                timeline: [
+                    { time: "09:30 - 10:00", desc: "יציאה מ-Hotel Bel Sito ונסיעה לסירמיונה (כ-25 דקות נסיעה)." },
+                    { time: "10:00 - 10:30", desc: "חניה ב-Parcheggio Monte Baldo והליכה קצרה ושטוחה אל חומות המבצר העתיק." },
+                    { time: "10:30 - 11:30", desc: "שיט משפחתי בסירה מהירה של Consorzio Motoscafisti סביב חצי האי (מעיינות חמים ווילה רומית)." },
+                    { time: "11:30 - 13:30", desc: "טיול במדרחוב העתיק, צילומים ליד מבצר סקאליג'רו וגלידת ענק ב-Gelateria Mirabili." },
+                    { time: "13:30 - 15:00", desc: "ארוחת צהריים במסעדת Ristorante Scaligeri במדרחוב." },
+                    { time: "15:00 - 16:30", desc: "טיול מוצל בפארק מריה קאלאס ומנוחה על ספסלים מול האגם." },
+                    { time: "16:30 - 17:00", desc: "נסיעה חזרה ל-Hotel Bel Sito בפסקיירה (כ-25 דקות)." },
+                    { time: "17:00", desc: "חזרה למלון, מנוחה וארוחת ערב בפאב האמריקאי The Brothers בפסקיירה." }
+                ]
+            },
+            {
+                day: 3,
+                date: "13 בספטמבר (יום א')",
+                title: "לאזיזה, בורגטו ופארק סיגורטה ברכבי גולף",
+                region: "אגם גארדה",
+                hotel: "Hotel Bel Sito Peschiera",
+                hotelMapUrl: "https://maps.google.com/?cid=2354751992871040838",
+                hours: { depart: "יציאה: 09:00", returnTime: "חזרה למלון: 16:50", driveTotal: "כ-55 דקות במצטבר (40 ק\"מ)" },
+                weather: {
+                    icon: "🌤️",
+                    tempDay: "25°C",
+                    tempNight: "15°C",
+                    condition: "נאה עם עננות קלה",
+                    clothing: "לבוש נוח ונושם לרכיבה ברכבי גולף; נעלי הליכה נוחות למבוך השיחים; עליונית קלה לשעות הבוקר.",
+                    packingTip: "משקפי שמש וכובעים למרחבי הדשא הפתוחים בפארק סיגורטה."
+                },
+                summary: "יום פסטורלי ונינוח מושלם ליום ראשון: טיילת הגלים בלאזיזה, כפר טחנות המים בורגטו, וסיור קסום בפארק סיגורטה ברכבי גולף חשמליים מונחי GPS.",
+                grandparents: "רכבי הגולף בסיגורטה פותרים לחלוטין את פערי המרחקים ומאפשרים לראות את כל הפארק הענק בישיבה נינוחה. בורגטו ולאזיזה שטוחות מאוד.",
+                kids: "מבוך השיחים הענק (Labirinto) בסיגורטה, חוות חיות, האכלת ברבורים בנמל הוונציאני של לאזיזה.",
+                parking: "Parcheggio Marra בלאזיזה; חניוני שטח פתוחים וחינמיים בכניסה לבורגטו ובפארק סיגורטה.",
+                timeline: [
+                    { time: "09:00 - 09:20", desc: "יציאה מ-Hotel Bel Sito צפונה ללאזיזה (כ-15 דקות נסיעה, 9 ק\"מ). חניה ב-Parcheggio Marra." },
+                    { time: "09:20 - 11:30", desc: "סיור בלאזיזה: טיילת הגלים הרחבה, הנמל הוונציאני הישן, קפה ב-La Cremeria והאכלת ברבורים." },
+                    { time: "11:30 - 12:00", desc: "נסיעה מלאזיזה לכפר טחנות המים בורגטו סול מינצ'ו (כ-25 דקות נסיעה, 18 ק\"מ)." },
+                    { time: "12:00 - 13:30", desc: "סיור על גשרי העץ של בורגטו וארוחת צהריים מיתולוגית של טורטליני 'קשרי אהבה' ב-Antica Locanda Mincio." },
+                    { time: "13:30 - 13:40", desc: "נסיעה של 2 דקות לכניסה של פארק ג'ארדינו סיגורטה (Parco Giardino Sigurtà)." },
+                    { time: "13:40 - 16:30", desc: "שוכרים רכב גולף חשמלי בקופות ומסיירים בנוחות בכל הפארק: מבוך השיחים, חוות החיות והאגמים." },
+                    { time: "16:30 - 16:50", desc: "נסיעה קצרה חזרה ל-Hotel Bel Sito בפסקיירה (כ-15-20 דקות נסיעה, 13 ק\"מ)." },
+                    { time: "16:50", desc: "חזרה למלון בפסקיירה, מקלחות וארוחת ערב איטלקית ב-L'Osteria In Strada." }
+                ]
+            },
+            {
+                day: 4,
+                date: "14 בספטמבר (יום ב')",
+                title: "פארק גארדלנד (Gardaland): יום האקשן המשפחתי",
+                region: "אגם גארדה",
+                hotel: "Hotel Bel Sito Peschiera",
+                hotelMapUrl: "https://maps.google.com/?cid=2354751992871040838",
+                hours: { depart: "יציאה: 09:15", returnTime: "חזרה למלון: 17:55", driveTotal: "כ-10 דקות הלוך-חזור (5 ק\"מ סה\"כ!)" },
+                weather: {
+                    icon: "☀️",
+                    tempDay: "26°C",
+                    tempNight: "16°C",
+                    condition: "שמשי ונוח לפארק",
+                    clothing: "חולצות קצרות, נעלי ספורט סגורות היטב (שלא יעופו ברכבות ההרים!), ומכנסיים קלים שמתייבשים מהר.",
+                    packingTip: "הביאו שקיות אטומות לטלפונים וסט בגדים קלים להחלפה בתיק עבור מתקני המים הרטובים (Atlantide ו-Jungle Rapids)."
+                },
+                summary: "יום שלם בפארק השעשועים הגדול באיטליה. יום שני נבחר במכוון כדי ליהנות מתורים קצרים פי כמה. המלון שלכם נמצא רק 5 דקות משער הפארק!",
+                grandparents: "השכרת כיסאות גלגלים בכניסה, רכבת פנורמית Transgardaland Express, מופעים ממוזגים באולמות סגורים בצהריים, ואקווריום SEA LIFE הצמוד.",
+                kids: "רכבות הרים מובילות (Mammut, Shaman, Oblivion), מתקני מים (Jungle Rapids, Atlantide) ומתחם Peppa Pig.",
+                parking: "חניון השטח הפתוח הענק של גארדלנד. שערים נפתחים ב-09:00. גישה ישירה ומרוצפת לכניסה.",
+                timeline: [
+                    { time: "09:15 - 09:25", desc: "יציאה מ-Hotel Bel Sito ישירות לגארדלנד (5-7 דקות נסיעה בלבד!)." },
+                    { time: "09:25 - 10:00", desc: "חניה בחניון הפתוח, מעבר שערים והשכרת עגלות/כיסא גלגלים ב-Welcome Desk." },
+                    { time: "10:00 - 12:30", desc: "בוקר של אקשן: מתחילים ברכבת Mammut, ממשיכים לרכבות האקסטרים ולמתחם Peppa Pig לקטנים." },
+                    { time: "12:30 - 14:30", desc: "ארוחת צהריים ממוזגת במסעדת Saloon וצפייה במופעים הממוזגים באולמות הסגורים (מנוחה מלאה לסבים)." },
+                    { time: "14:30 - 17:15", desc: "אחה\"כ של מתקני מים (Fuga da Atlantide) או סיור קריר באקווריום SEA LIFE Aquarium." },
+                    { time: "17:15 - 17:45", desc: "מפגש בחנות המזכרות הראשית ביציאה." },
+                    { time: "17:45 - 17:55", desc: "נסיעה קצרצרה של 5 דקות חזרה ל-Hotel Bel Sito." },
+                    { time: "17:55", desc: "חזרה למלון בפסקיירה, מקלחות והתרעננות וארוחת ערב רגועה ליד המלון." }
+                ]
+            },
+            {
+                day: 5,
+                date: "15 בספטמבר (יום ג')",
+                title: "צפון האגם: ריבה דל גארדה ומפלי ורונה הנסתרים",
+                region: "אגם גארדה",
+                hotel: "Hotel Bel Sito Peschiera",
+                hotelMapUrl: "https://maps.google.com/?cid=2354751992871040838",
+                hours: { depart: "יציאה: 08:45", returnTime: "חזרה למלון: 17:15", driveTotal: "כשלוש שעות נסיעה נופית הלוך-חזור (130 ק\"מ)" },
+                weather: {
+                    icon: "⛅",
+                    tempDay: "23°C",
+                    tempNight: "14°C",
+                    condition: "קריר יותר בצפון האגם ורוחות אלפיניות",
+                    clothing: "מכנסיים ארוכים קלים, שכבה עליונה (סווטשירט או ג'קט קל) לרוח הצפונית של ריבה.",
+                    packingTip: "חובה: מעילי גשם דקים / פונצ'ו ניילון חד-פעמי למפלי ורונה כנגד רסס המים השוצף במערה."
+                },
+                summary: "נסיעה לאורך הגדה המזרחית מול נוף מצוקים אלפיניים. סיור בריבה דל גארדה, ארוחה במוסד Leon d'Oro, ביקור במפלי ורונה במערת סלע, וגלידת Flora.",
+                grandparents: "טיילת ריבה דל גארדה שטוחה לחלוטין. המסלול במפלי ורונה מונגש וקצר מאוד (כ-25 דקות הליכה על גשרי עץ מסודרים).",
+                kids: "מערת סלע עם מפל שוצף מגובה 100 מטר ורסס מים משעשע (הצטיידו במעילי גשם דקים), גלידות ענק ב-Flora.",
+                parking: "Parcheggio Terme Romane בריבה דל גארדה; חניון שטח פתוח צמוד וחינמי בכניסה למפלי ורונה.",
+                timeline: [
+                    { time: "08:45 - 10:15", desc: "יציאה מ-Hotel Bel Sito צפונה על כביש החוף המזרחי (SR249) לריבה דל גארדה (שעה וחצי נסיעה, 65 ק\"מ)." },
+                    { time: "10:15 - 12:30", desc: "סיור בריבה דל גארדה: טיילת החוף הפנורמית, הנמל הישן ומגדל אפונאלה (חניה ב-Terme Romane)." },
+                    { time: "12:30 - 14:00", desc: "ארוחת צהריים מפוארת במוסד הקולינרי Ristorante Pizzeria Leon d'Oro (פיצות, פסטות ושניצל ענק)." },
+                    { time: "14:00 - 14:15", desc: "נסיעה קצרה של 3 ק\"מ צפונה אל מפלי ורונה (Cascata del Varone)." },
+                    { time: "14:15 - 15:30", desc: "סיור על גשרי עץ בתוך קניון הסלע והמערה אל המפל השוצף." },
+                    { time: "15:30 - 17:15", desc: "עצירה לגלידה מיתולוגית ב-Flora בריבה ונסיעה דרומה חזרה ל-Hotel Bel Sito (שעה ו-45 דקות נסיעה)." },
+                    { time: "17:15", desc: "חזרה למלון בפסקיירה, מנוחה וארוחת ערב היסטורית ב-Osteria Rivelin." }
+                ]
+            },
+            {
+                day: 6,
+                date: "16 בספטמבר (יום ד')",
+                title: "ורונה העתיקה: ארנה רומית, מרפסת יוליה ורכבת נוחה",
+                region: "אגם גארדה",
+                hotel: "Hotel Bel Sito Peschiera",
+                hotelMapUrl: "https://maps.google.com/?cid=2354751992871040838",
+                hours: { depart: "יציאה: 09:15", returnTime: "חזרה למלון: 17:10", driveTotal: "רכבת ישירה: 13-15 דקות בלבד לכל כיוון!" },
+                weather: {
+                    icon: "🌤️",
+                    tempDay: "25°C",
+                    tempNight: "15°C",
+                    condition: "נוח ונעים לעיר",
+                    clothing: "לבוש יומיומי אלגנטי ונוח, נעלי הליכה שטוחות ונוחות למדרחוב השיש החלק של ורונה, שכבה קלה לקראת הערב.",
+                    packingTip: "מטריה מתקפלת קטנה בתיק הגב לכל מקרה של טפטוף קל בעיר."
+                },
+                summary: "נסיעה חכמה ברכבת ישירה מתחנת פסקיירה לתחנת Verona Porta Nuova. סיור בארנה הרומית, מדרחוב הקניות החלק Via Mazzini, מרפסת יוליה ופיאצה ארבה.",
+                grandparents: "רכבת ומונית ישירות לכיכר ברה חוסכות פקקים ונהיגה. המדרחוב רחב, שטוח ומרוצף בשיש חלק ללא מדרגות. בתי קפה רבים למנוחה.",
+                kids: "הארנה הרומית המרשימה (קוליסאום אמיתי), מרפסת יוליה, גלידת שוקולד ב-Gelateria Savoia מ-1939.",
+                parking: "משאירים את הרכבים בחניון תחנת הרכבת בפסקיירה (3 דקות מהמלון). בוורונה מתניידים ברגל ובמוניות Radio Taxi.",
+                timeline: [
+                    { time: "09:15 - 09:50", desc: "הגעה לתחנת הרכבת בפסקיירה (3 דק' מהמלון), עולים על רכבת ישירה ל-Verona Porta Nuova (13 דקות נסיעה)." },
+                    { time: "10:00 - 11:30", desc: "מונית קצרה (4 דק') ישירות ל-Piazza Bra, תצפית מרשימה על הארנה הרומית וצילומים." },
+                    { time: "11:30 - 13:00", desc: "הליכה במדרחוב Via Mazzini המרוצף אל חצר ביתה של יוליה וכיכר Piazza delle Erbe." },
+                    { time: "13:00 - 14:30", desc: "ארוחת צהריים בפיצרייה הנפוליטנית Peperino או המבורגר שף ב-Buns." },
+                    { time: "14:30 - 16:00", desc: "זמן חופשי לקניות, גלידה היסטורית ב-Gelateria Savoia מול הארנה ומנוחה בבתי הקפה." },
+                    { time: "16:00 - 16:30", desc: "מונית חזרה לתחנת הרכבת ועליה לרכבת ישירה לפסקיירה." },
+                    { time: "16:30 - 17:10", desc: "חזרה ל-Hotel Bel Sito בפסקיירה (נסיעה של 3 דקות מתחנת הרכבת למלון)." },
+                    { time: "17:10", desc: "התארגנות, מנוחה ואריזת מזוודות לקראת המעבר מחר לאגם מאג'ורה." }
+                ]
+            },
+            {
+                day: 7,
+                date: "17 בספטמבר (יום ה')",
+                title: "ספארי פומביה (מהמזגן ברכבים) ומעבר לבאבנו",
+                region: "אגם מאג'ורה",
+                hotel: "Elvezia Boutique (Largo U. Locatelli 6, Baveno)",
+                hotelMapUrl: "https://maps.google.com/?cid=1541251552133558887",
+                hours: { depart: "יציאה: 09:00", returnTime: "הגעה למלון: 15:30", driveTotal: "כשעתיים וחצי נסיעה כוללת (195 ק\"מ)" },
+                weather: {
+                    icon: "🌤️",
+                    tempDay: "24°C",
+                    tempNight: "13°C",
+                    condition: "חמים במישור ונעים במאג'ורה",
+                    clothing: "בגדי נסיעה נוחים וממוזגים ברכב לשמורה; ג'קט קל או סריג לערב הראשון בטיילת באבנו.",
+                    packingTip: "באגם מאג'ורה הערבים קרירים יותר מדרום גארדה ב-2-3 מעלות – הצטיידו בעליונית חמה."
+                },
+                summary: "צ'ק-אאוט מפסקיירה ונסיעה מערבה. עצירה מושלמת באמצע הדרך ב-Safari Park Pombia: נסיעה ברכבים שלכם בין אריות וג'ירפות, ארוחה, והגעה למלון בבאבנו.",
+                grandparents: "הספארי מתבצע כולו בישיבה נינוחה ברכבים הממוזגים שלכם ללא הליכה של מטר אחד! בבאבנו המלון מצויד במעלית.",
+                kids: "חיות בר חופשיות מטר משמשת הרכב (אריות, נמרים, ג'ירפות, פילים), פארק שעשועים קטן ומתחם זוחלים.",
+                parking: "חניה פתוחה ורחבה במתחם הספארי. בבאבנו חניה פתוחה ונוחה ברחוב ובמגרשים עירוניים ללא מגבלת גובה.",
+                timeline: [
+                    { time: "09:00 - 10:45", desc: "צ'ק-אאוט מ-Hotel Bel Sito ונסיעה מערבה על כביש A4 לספארי פארק פומביה (שעה ו-45 דקות נסיעה, 155 ק\"מ)." },
+                    { time: "10:45 - 12:45", desc: "סיור ספארי ברכבים הפרטיים שלכם בשמורה הפתוחה בין אריות, נמרים, ג'ירפות ופילים." },
+                    { time: "12:45 - 14:45", desc: "חניה במתחם הספארי, ארוחת צהריים קלה, מתקני שעשועים ומתחם זוחלים לילדים." },
+                    { time: "14:45 - 15:30", desc: "נסיעה צפונה ישירות ל-Elvezia Boutique בבאבנו על שפת אגם מאג'ורה (40 דקות נסיעה, 42 ק\"מ)." },
+                    { time: "15:30 - 17:00", desc: "צ'ק-אין, חניה, פריקת מזוודות ומנוחה בדירות הבוטיק האלגנטיות." },
+                    { time: "17:00 - 19:30", desc: "סיור רגלי ראשון בטיילת באבנו מול האיים וארוחת ערב איטלקית ב-Sottosopra (2 דק' מהמלון)." },
+                    { time: "19:30", desc: "חזרה למלון למנוחת לילה ראשונה באגם מאג'ורה." }
+                ]
+            },
+            {
+                day: 8,
+                date: "18 בספטמבר (יום ו')",
+                title: "האיים הבורומאיים: ארמונות, טווסים לבנים ושיט",
+                region: "אגם מאג'ורה",
+                hotel: "Elvezia Boutique Baveno",
+                hotelMapUrl: "https://maps.google.com/?cid=1541251552133558887",
+                hours: { depart: "יציאה: 09:30", returnTime: "חזרה למלון: 17:10", driveTotal: "כ-15 דקות נסיעה (8 ק\"מ סה\"כ לרציף סטרזה)" },
+                weather: {
+                    icon: "☀️",
+                    tempDay: "23°C",
+                    tempNight: "13°C",
+                    condition: "שמשי ומצוין לשיט",
+                    clothing: "לבוש קליל עם עליונית קלה לשעות השיט בין האיים, כובע שמש ונעליים נוחות לגני הארמון.",
+                    packingTip: "משקפי שמש לצילומים מרהיבים מול הטווסים הלבנים והמים."
+                },
+                summary: "יום מלכותי באגם מאג'ורה: שיט קצר בסירות מנוע אל ארמון הבארוק והגנים של Isola Bella עם טווסים לבנים, ומשם לארוחת צהריים מול המים ב-Isola dei Pescatori.",
+                grandparents: "האיים קטנים ומישוריים, ללא מכוניות. הארמון מונגש עם מעליות למוגבלי תנועה. השיט קצרצר (10 דקות) ומעניק מנוחה בישיבה.",
+                kids: "טווסים לבנים המסתובבים חופשי בגנים, מערות תת-קרקעיות מצופות צדפים, שיט בסירות מנוע בין האיים.",
+                parking: "Piazza Marconi בסטרזה - חניון שטח פתוח ענק על שפת האגם מול רציפי הסירות (ללא מגבלת גובה).",
+                timeline: [
+                    { time: "09:30 - 09:40", desc: "נסיעה קצרה של 4 ק\"מ מבאבנו לרציף המעבורות בסטרזה (חניה ב-Piazza Marconi)." },
+                    { time: "09:40 - 10:10", desc: "עולים על מונית מים שיתופית (CMA) לשיט קצר של 10 דקות לאיזולה בלה (Isola Bella)." },
+                    { time: "10:10 - 12:30", desc: "סיור בארמון הבארוק המפואר ובגנים הבוטניים המדורגים עם עשרות טווסים לבנים." },
+                    { time: "12:30 - 12:45", desc: "שיט קצרצר של 5 דקות מאיזולה בלה לאי הדייגים (Isola dei Pescatori)." },
+                    { time: "12:45 - 15:00", desc: "ארוחת צהריים נינוחה מול המים במסעדת Belvedere וסיור בסמטאות השטוחות." },
+                    { time: "15:00 - 15:20", desc: "שיט חזרה לרציף סטרזה." },
+                    { time: "15:20 - 17:00", desc: "טיול נינוח במדרחוב סטרזה, גלידת אגוזי לוז ב-Gelateria K2 וקניית עוגיות מרגריטינה." },
+                    { time: "17:00 - 17:10", desc: "נסיעה קצרה של 7 דקות חזרה ל-Elvezia Boutique בבאבנו." },
+                    { time: "17:10", desc: "חזרה למלון, מנוחה וארוחת ערב בטרטוריה מסורתית." }
+                ]
+            },
+            {
+                day: 9,
+                date: "19 בספטמבר (יום שבת)",
+                title: "וילה פלאביצ'ינו ומגלשות הרים במונטה מוטרונה",
+                region: "אגם מאג'ורה",
+                hotel: "Elvezia Boutique Baveno",
+                hotelMapUrl: "https://maps.google.com/?cid=1541251552133558887",
+                hours: { depart: "יציאה: 09:30", returnTime: "חזרה למלון: 17:00", driveTotal: "כשעה וחצי נסיעה מצטברת (45 ק\"מ)" },
+                weather: {
+                    icon: "🏔️",
+                    tempDay: "16°C",
+                    tempNight: "9°C",
+                    condition: "אלפיני קריר בפסגה (1,491 מ') עם רוחות",
+                    clothing: "בבוקר בוילה לבוש נוח. לפסגת מוטרונה: חובה סווטשירט חם, פליז או מעיל רוח קל ומכנסיים ארוכים.",
+                    packingTip: "הטמפרטורה בפסגת ההר נמוכה בכ-8-10 מעלות מהאגם – אל תעלו רק בחולצה קצרה!"
+                },
+                summary: "פארק טבע וחיות מוצל בבוקר (וילה פלאביצ'ינו), נסיעה ברכבים עד לפסגת מונטה מוטרונה, מגלשות הרים אלפיניות Alpyland, ותצפית 360 מעלות על 7 אגמים.",
+                grandparents: "שבילי וילה פלאביצ'ינו סלולים, רחבים ומוצלים (ספסלים רבים). העלייה לפסגת מוטרונה נעשית ברכב עד למטרים בודדים מבית הקפה הפנורמי.",
+                kids: "מתחם ליטוף פתוח עם צבאים ועיזים, למורים וקנגורו. גלישה מהירה במזחלות ההרים Alpyland בשליטה עצמית.",
+                parking: "חניוני שטח פתוחים וחינמיים בכניסה לוילה פלאביצ'ינו ובחניון העליון בפסגת מונטה מוטרונה.",
+                timeline: [
+                    { time: "09:30 - 09:45", desc: "נסיעה מבאבנו לפארק וילה פלאביצ'ינו בסטרזה (10 דקות נסיעה, 6 ק\"מ)." },
+                    { time: "09:45 - 12:15", desc: "סיור מונגש ומוצל בפארק הטבע והחיות: פינת ליטוף צבאים פתוחה, למורים וגנים בוטניים." },
+                    { time: "12:15 - 13:00", desc: "נסיעה נופית ברכבים במעלה כביש האגרה לפסגת מונטה מוטרונה (35 דקות נסיעה, 20 ק\"מ)." },
+                    { time: "13:00 - 14:15", desc: "ארוחת צהריים אלפינית בבקתת Rifugio Genziana בפסגת ההר מול הנוף." },
+                    { time: "14:15 - 16:15", desc: "הורים וילדים גולשים במגלשות ההרים Alpyland; הסבים נהנים מקפה מול תצפית 7 האגמים." },
+                    { time: "16:15 - 17:00", desc: "נסיעה ברכבים במורד ההר חזרה ל-Elvezia Boutique בבאבנו (40 דקות נסיעה)." },
+                    { time: "17:00", desc: "חזרה למלון בבאבנו, מנוחה וארוחת ערב איטלקית ב-Ristorante Posta." }
+                ]
+            },
+            {
+                day: 10,
+                date: "20 בספטמבר (יום א')",
+                title: "שווייץ האיטלקית: מופע עופות דורסים וטיילת אסקונה",
+                region: "שווייץ",
+                hotel: "Elvezia Boutique Baveno",
+                hotelMapUrl: "https://maps.google.com/?cid=1541251552133558887",
+                hours: { depart: "יציאה: 09:00", returnTime: "חזרה למלון: 16:45", driveTotal: "כשעתיים וחצי נסיעה נופית הלוך-חזור (105 ק\"מ)" },
+                weather: {
+                    icon: "🌤️",
+                    tempDay: "22°C",
+                    tempNight: "12°C",
+                    condition: "נעים, מוצל וקריר בבוקר",
+                    clothing: "מכנסיים ארוכים קלים, חולצה קצרה ומעליה קרדיגן/ג'קט למופע הציפורים בבוקר באמפיתיאטרון המוצל.",
+                    packingTip: "תזכורת: דרכונים מקוריים בתוקף לכל בני המשפחה עבור מעבר הגבול."
+                },
+                summary: "נסיעה נופית צפונה לאורך קו המים וחציית הגבול לשווייץ. מופע מעוף מרהיב של עיטים ונשרים ב-Falconeria Locarno וסיור בטיילת הצבעונית של אסקונה.",
+                grandparents: "המופע בלוקרנו נערך באמפיתיאטרון מוצל עם ישיבה מלאה מונגשת (מנוחה מושלמת לסבים). טיילת אסקונה מישורית וחלקה.",
+                kids: "עופות דורסים ענקיים (עיטים, נשרים וינשופים) שעפים נמוך סנטימטרים מעל ראשי הקהל, עוגיות אמרטי שוויצריות.",
+                parking: "חניון שטח פתוח ב-Falconeria בלוקרנו; חניון שטח פתוח ליד טיילת אסקונה. (דרכונים מקוריים חובה!).",
+                timeline: [
+                    { time: "09:00 - 10:15", desc: "יציאה מבאבנו צפונה על כביש SS34, חציית גבול שווייץ והגעה ללוקרנו (שעה ורבע נסיעה, 52 ק\"מ)." },
+                    { time: "10:15 - 10:45", desc: "חניה ב-Falconeria Locarno, רכישת כרטיסים והתמקמות באמפיתיאטרון המוצל." },
+                    { time: "11:00 - 12:00", desc: "צפייה במופע הטיסה המרהיב של עופות דורסים ונשרים העפים נמוך מעל הקהל." },
+                    { time: "12:00 - 12:30", desc: "סיור במתחמי הציפורים וצילומים עם הבזיירים." },
+                    { time: "12:30 - 12:45", desc: "נסיעה קצרצרה של 10 דקות לעיירה השכנה אסקונה (Ascona)." },
+                    { time: "12:45 - 15:30", desc: "ארוחת צהריים מול המים ב-Ristorante Svizzero, סיור בטיילת הצבעונית ועוגיות אמרטי ב-Marnin מ-1852." },
+                    { time: "15:30 - 16:45", desc: "נסיעה נופית דרומה חזרה לאיטליה ל-Elvezia Boutique בבאבנו (שעה ורבע נסיעה)." },
+                    { time: "16:45", desc: "חזרה למלון בבאבנו, מנוחה וערב חופשי." }
+                ]
+            },
+            {
+                day: 11,
+                date: "21 בספטמבר (יום ב')",
+                title: "אגם אורטה ומנזר סנטה קתרינה (מעלית סלע)",
+                region: "אגם מאג'ורה",
+                hotel: "Elvezia Boutique Baveno",
+                hotelMapUrl: "https://maps.google.com/?cid=1541251552133558887",
+                hours: { depart: "יציאה: 09:15", returnTime: "חזרה למלון: 16:45", driveTotal: "כשעה וארבעים דקות נסיעה מצטברת (65 ק\"מ)" },
+                weather: {
+                    icon: "🌤️",
+                    tempDay: "23°C",
+                    tempNight: "13°C",
+                    condition: "פסטורלי ונעים",
+                    clothing: "לבוש נוח ומכבד למנזר (כיסוי כתפיים וברכיים), נעלי הליכה נוחות לשבילי האבן באורטה.",
+                    packingTip: "צעיף קל בתיק לנשים לצורך כניסה למבני הכנסייה והמנזר התלוי."
+                },
+                summary: "ביקור באגם אורטה השקט והפוטוגני, רכבת תיירים Trenino, שיט קצר לאי סן ג'וליו, וביקור במנזר התלוי סנטה קתרינה דל סאסו באמצעות מעלית סלע.",
+                grandparents: "רכבת ה-Trenino באורטה חוסכת את העלייה מהחניה. מעלית הסלע במנזר סנטה קתרינה מבטלת לחלוטין 270 מדרגות ומנגישה את האתר באופן מלא.",
+                kids: "רכבת תיירים קטנה, שיט בסירות אל האי סן ג'וליו, מעלית שקופה היורדת בתוך פיר סלע אל המנזר התלוי מעל המים.",
+                parking: "Parcheggio Prarondo באורטה (שטח פתוח); חניון שטח פתוח חינמי בכניסה למעלית מנזר סנטה קתרינה.",
+                timeline: [
+                    { time: "09:15 - 09:45", desc: "יציאה מבאבנו מערבה לחניון Parcheggio Prarondo באורטה סן ג'וליו (30 דקות נסיעה, 24 ק\"מ)." },
+                    { time: "09:45 - 10:15", desc: "עלייה על רכבת התיירים הקטנה (Trenino) מהחניון ישירות לכיכר המרכזית Piazza Motta." },
+                    { time: "10:15 - 10:30", desc: "שיט קצר של 5 דקות בסירה (Servizio Pubblico) אל האי הציורי סן ג'וליו (Isola San Giulio)." },
+                    { time: "10:30 - 12:00", desc: "סיור מישורי ושקט ב'שביל השתיקה', ביקור בבזיליקה עתיקה ושיט חזרה לכיכר." },
+                    { time: "12:00 - 13:30", desc: "ארוחת צהריים בכיכר מוטה ב-Leon d'Oro מול המים וגלידת שף ב-Arte del Gelato." },
+                    { time: "13:30 - 14:15", desc: "נסיעה מאורטה אל מנזר סנטה קתרינה דל סאסו (40 דקות נסיעה, 35 ק\"מ)." },
+                    { time: "14:15 - 16:00", desc: "חניה בחניון העליון וירידה ישירה במעלית החצובה בסלע המצוק אל המנזר התלוי מעל המים." },
+                    { time: "16:00 - 16:45", desc: "נסיעה חזרה ל-Elvezia Boutique בבאבנו (40 דקות נסיעה)." },
+                    { time: "16:45", desc: "חזרה למלון, אריזת מזוודות וארוחת ערב חגיגית מסכמת לטיול בבאבנו." }
+                ]
+            },
+            {
+                day: 12,
+                date: "22 בספטמבר (יום ג')",
+                title: "מוזיאון Volandia, החזרת רכבים ב-13:00 וטיסה",
+                region: "אגם מאג'ורה",
+                hotel: "חזרה לישראל",
+                hotelMapUrl: null,
+                hours: { depart: "יציאה: 09:15", returnTime: "החזרה ב-Noleggiare: 13:00", driveTotal: "כ-45 דקות נסיעה מבאבנו לשדה (52 ק\"מ)" },
+                weather: {
+                    icon: "🌤️",
+                    tempDay: "23°C",
+                    tempNight: "14°C",
+                    condition: "נוח וממוזג",
+                    clothing: "בגדי טיסה נוחים וגמישים (טרנינג / מכנסי כותנה), נעלי ספורט וג'קט לטיסה במטוס הממוזג.",
+                    packingTip: "שמרו את כל מסמכי ההשכרה, כרטיסי העלייה למטוס והדרכונים בתיק יד נגיש."
+                },
+                summary: "צ'ק-אאוט מבאבנו, נסיעה קצרה לנמל התעופה מלפנסה, ביקור במוזיאון התעופה והחלל Volandia הצמוד, תדלוק מהיר, החזרת שני הרכבים ב-Noleggiare ב-13:00 ומעבר בשאטל לטרמינל 1.",
+                grandparents: "מוזיאון וולנדיה ממוזג, מקורה ושטוח לחלוטין. קירבתו (3 דקות) לסוכנות ההשכרה מבטלת כל סיכון לפקקים ומורידה את הלחץ ביום הטיסה.",
+                kids: "עשרות מטוסים ומסוקים אמיתיים שאפשר להיכנס אליהם, סימולטורי טיסה ומתחם משחקייה ענק לפני העלייה למטוס.",
+                parking: "חניה פתוחה וחינמית במתחם מוזיאון וולנדיה; החזרה במגרש של Noleggiare ב-Via Facchinetti 51.",
+                timeline: [
+                    { time: "09:15 - 10:00", desc: "צ'ק-אאוט מ-Elvezia Boutique ונסיעה ישירה למלפנסה / מוזיאון וולנדיה (45 דקות נסיעה, 52 ק\"מ)." },
+                    { time: "10:00 - 12:30", desc: "ביקור מהנה וממוזג במוזיאון התעופה Volandia (מטוסים, סימולטורים ומשחקייה לילדים)." },
+                    { time: "12:30 - 12:45", desc: "נסיעה של 3 דקות לתחנת הדלק בסומה לומברדו, תדלוק מלא של שני הרכבים ושמירת קבלה." },
+                    { time: "12:45 - 13:15", desc: "החזרת שני הרכבים בסניף Noleggiare ב-13:00 בדיוק, קבלת אישור סגירת חוזה ומסירת מפתחות." },
+                    { time: "13:15 - 13:30", desc: "עולים על שאטל החברה שלוקח את המשפחה והמזוודות ישירות לקומת ההמראות בטרמינל 1 (5 דקות)." },
+                    { time: "13:30 ואילך", desc: "בידוק בטחוני, צ'ק-אין ועלייה רגועה לטיסה חזרה הביתה לישראל!" }
+                ]
+            }
+        ];
+
+        // Master Restaurant Database (34 Spots)
+        const restaurantsData = [
+            // DAY 1
+            { id: 1, day: 1, name: "Pasticceria Pavòn", town: "פסקיירה דל גארדה", rating: 4.8, reviews: 1200, mealType: "בוקר", style: "קפה ומאפה", region: "אגם גארדה", priceRange: "€3 – €7", dishes: ["בריוש פיסטוק", "מאפי וניל", "קפוצ'ינו איטלקי"], notes: "כ-8 דקות הליכה מ-Hotel Bel Sito. מעולה להתרעננות ביום ההגעה.", mapUrl: "https://maps.google.com/?q=Pasticceria+Pavon+Peschiera" },
+            { id: 2, day: 1, name: "Ristorante Pizzeria Sosta e Gusta", town: "פסקיירה דל גארדה", rating: 4.6, reviews: 1200, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€15 – €25", dishes: ["פיצה קפריצ'וזה", "ספגטי קרבונרה", "Fritto Misto (דגים מטוגנים)", "טירמיסו"], notes: "מרחק 3 דקות הליכה בלבד מפתח המלון שלכם (Bel Sito)! אידיאלי לערב הראשון.", mapUrl: "https://maps.google.com/?q=Sosta+e+Gusta+Peschiera" },
+            { id: 3, day: 1, name: "Pizzeria Ristorante Bellavista", town: "פסקיירה דל גארדה", rating: 4.4, reviews: 2500, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€18 – €30", dishes: ["פיצות פריכות", "פסטה טרייה", "שניצל עגל דק עם צ'יפס לילדים"], notes: "חלופה מצוינת על הטיילת מול מימי האגם.", mapUrl: "https://maps.google.com/?q=Bellavista+Peschiera" },
+            { id: 4, day: 1, name: "Gelateria La Cremeria del Borgo", town: "פסקיירה דל גארדה", rating: 4.7, reviews: 850, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם גארדה", priceRange: "€2.5 – €5", dishes: ["פיסטוק סיציליאני", "שוקולד בלגי", "סורבה תות"], notes: "גלידת ערב נהדרת במהלך טיול בטיילת העתיקה.", mapUrl: "https://maps.google.com/?q=Gelateria+La+Cremeria+del+Borgo+Peschiera" },
+
+            // DAY 2
+            { id: 5, day: 2, name: "Feliz Cafè di Giusy", town: "פסקיירה דל גארדה", rating: 4.8, reviews: 750, mealType: "בוקר", style: "קפה ומאפה", region: "אגם גארדה", priceRange: "€5 – €12", dishes: ["פנקייקים עם פירות יער", "אומלטים עם גבינה", "קרואסונים עשירים"], notes: "ארוחת בוקר מפנקת ועשירה לפני היציאה לסירמיונה.", mapUrl: "https://maps.google.com/?q=Feliz+Cafe+Peschiera" },
+            { id: 6, day: 2, name: "Ristorante Pizzeria Scaligeri", town: "סירמיונה", rating: 4.5, reviews: 1800, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€20 – €35", dishes: ["פיצה דיאבולה", "ספגטי וונגולה / בולונז", "שניצל עגל Cotoletta וצ'יפס"], notes: "מיקום מרכזי במדרחוב העתיק של סירמיונה ליד המבצר.", mapUrl: "https://maps.google.com/?q=Ristorante+Scaligeri+Sirmione" },
+            { id: 7, day: 2, name: "Gelateria Mirabili / Del Corso", town: "סירמיונה", rating: 4.6, reviews: 2200, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם גארדה", priceRange: "€4 – €8", dishes: ["גביעי ענק מרהיבים", "טעמי קינדר בואנו", "פררו רושה", "מנגו ומסקרפונה"], notes: "אטרקציית חובה לילדים! גביעי ענק פוטוגניים במיוחד.", mapUrl: "https://maps.google.com/?q=Gelateria+Mirabili+Sirmione" },
+            { id: 8, day: 2, name: "The Brothers Gastro Pub", town: "פסקיירה דל גארדה", rating: 4.6, reviews: 1100, mealType: "ערב", style: "אמריקאי / פאב", region: "אגם גארדה", priceRange: "€15 – €25", dishes: ["המבורגרים עסיסיים מבשר איכותי", "שניצלונים פריכים", "צ'יפס מתובל", "בירות מהחבית"], notes: "אווירה אמריקאית משפחתית ושינוי מרענן לערב בפסקיירה.", mapUrl: "https://maps.google.com/?q=The+Brothers+Gastro+Pub+Peschiera" },
+
+            // DAY 3
+            { id: 9, day: 3, name: "La Cremeria di Lazise", town: "לאזיזה", rating: 4.7, reviews: 900, mealType: "בוקר", style: "קפה ומאפה", region: "אגם גארדה", priceRange: "€4 – €8", dishes: ["קרואסונים ממולאים", "קפוצ'ינו איטלקי", "מאפים חמים מול האגם"], notes: "על הטיילת בלאזיזה מול הברבורים באגם.", mapUrl: "https://maps.google.com/?q=La+Cremeria+di+Lazise" },
+            { id: 10, day: 3, name: "Antica Locanda Mincio", town: "בורגטו סול מינצ'ו", rating: 4.5, reviews: 3140, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€25 – €45", dishes: ["טורטליני 'Nodo d'Amore' בחמאה ומרווה", "פסטה בולונז לילדים", "שניצלים זהובים וצ'יפס"], notes: "מוסד קולינרי מפורסם היושב ממש מעל מי נהר המינצ'ו בבורגטו.", mapUrl: "https://maps.google.com/?q=Antica+Locanda+Mincio+Borghetto" },
+            { id: 11, day: 3, name: "L'Osteria In Strada", town: "פסקיירה דל גארדה", rating: 4.6, reviews: 1200, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€20 – €35", dishes: ["טליאטלה בראגו בקר", "ניוקי כמהין", "לזניה עשירה", "נתחי בקר משובחים"], notes: "ארוחת ערב איטלקית חמה ומנחמת במרכז פסקיירה.", mapUrl: "https://maps.google.com/?q=L'Osteria+In+Strada+Peschiera" },
+
+            // DAY 4
+            { id: 12, day: 4, name: "Toasteria Italiana", town: "פסקיירה דל גארדה", rating: 4.8, reviews: 1400, mealType: "בוקר", style: "קפה ומאפה", region: "אגם גארדה", priceRange: "€6 – €12", dishes: ["כ-25 סוגי טוסטים משודרגים", "מיצים טבעיים סחוטים", "שייקים"], notes: "ארוחת בוקר מהירה, משביעה וטעימה בדרך לגארדלנד.", mapUrl: "https://maps.google.com/?q=Toasteria+Italiana+Peschiera" },
+            { id: 13, day: 4, name: "Saloon Restaurant (בתוך גארדלנד)", town: "גארדלנד", rating: 4.2, reviews: 800, mealType: "צהריים", style: "אמריקאי / פאב", region: "אגם גארדה", priceRange: "€15 – €22", dishes: ["המבורגרים עסיסיים", "אצבעות שניצל עוף לילדים", "צ'יפס חם", "צלעות ברביקיו"], notes: "מסעדה מקורה וממוזגת בתוך הפארק - מעולה למנוחה של שעה בישיבה לסבים.", mapUrl: "https://maps.google.com/?q=Gardaland+Park" },
+
+            // DAY 5
+            { id: 14, day: 5, name: "Ristorante Pizzeria Leon d'Oro", town: "ריבה דל גארדה", rating: 4.8, reviews: 8780, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€18 – €35", dishes: ["פיצות מופת מתנור לבנים", "ריזוטו לימון מפורסם", "פסטת כמהין", "שניצל וינאי ענק ופריך (Wiener Schnitzel) עם צ'יפס"], notes: "מוסד קולינרי מפורסם הפועל מעל 80 שנה! מרווח מאוד למשפחות.", mapUrl: "https://maps.google.com/?q=Leon+d'Oro+Riva+del+Garda" },
+            { id: 15, day: 5, name: "Bar Gelateria Flora", town: "ריבה דל גארדה", rating: 4.6, reviews: 4800, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם גארדה", priceRange: "€3.5 – €8", dishes: ["ממלכת הגלידה של צפון איטליה", "מנות גלידה משפחתיות עם פירות יער חמים וקצפת הררית"], notes: "גלידריית ענק מפורסמת בצפון האגם.", mapUrl: "https://maps.google.com/?q=Bar+Gelateria+Flora+Riva" },
+            { id: 16, day: 5, name: "Osteria Rivelin", town: "פסקיירה דל גארדה", rating: 4.5, reviews: 1500, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€22 – €38", dishes: ["ניוקי ביתי", "פסטה עם ראגו עשיר", "צלעות טלה", "פנה קוטה"], notes: "מסעדה כפרית אותנטית מהמאה ה-17 השוכנת בתוך ביצורי העיר העתיקה.", mapUrl: "https://maps.google.com/?q=Osteria+Rivelin+Peschiera" },
+
+            // DAY 6
+            { id: 17, day: 6, name: "Pasticceria Flego", town: "ורונה", rating: 4.6, reviews: 1800, mealType: "בוקר", style: "קפה ומאפה", region: "אגם גארדה", priceRange: "€4 – €8", dishes: ["בריושים ממולאים בקרם פטיסייר", "מקרונים צבעוניים", "שוקולדים בעבודת יד"], notes: "קונדיטוריית עילית במדרחוב המרכזי של ורונה.", mapUrl: "https://maps.google.com/?q=Pasticceria+Flego+Verona" },
+            { id: 18, day: 6, name: "Peperino Pizza & Grill Verona", town: "ורונה", rating: 4.2, reviews: 4630, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם גארדה", priceRange: "€15 – €28", dishes: ["פיצה נפוליטנית אמיתית עם שוליים תפוחים", "ספגטי קרבונרה", "מנות עוף וסטייקים"], notes: "מרחק 2 דקות הליכה בלבד מ-Piazza Bra והארנה הרומית.", mapUrl: "https://maps.google.com/?q=Peperino+Verona" },
+            { id: 19, day: 6, name: "Buns Gourmet Burgers", town: "ורונה", rating: 4.6, reviews: 1950, mealType: "צהריים", style: "אמריקאי / פאב", region: "אגם גארדה", priceRange: "€14 – €22", dishes: ["המבורגרים גורמה מבקר איטלקי", "צ'יפס דק קריספי", "כדורי גבינה מטוגנים", "מילקשייקים"], notes: "חלופה אמריקאית מעולה במרכז ורונה.", mapUrl: "https://maps.google.com/?q=Buns+Gourmet+Burgers+Verona" },
+            { id: 20, day: 6, name: "Gelateria Savoia", town: "ורונה", rating: 4.6, reviews: 2100, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם גארדה", priceRange: "€3 – €6", dishes: ["קינוח Gianduiotto (גלידת שוקולד-אגוזים בקצפת)", "פיסטוק", "קרם וניל עשיר"], notes: "מוסד היסטורי הפועל מאז 1939 ישירות מול הארנה בכיכר ברה.", mapUrl: "https://maps.google.com/?q=Gelateria+Savoia+Verona" },
+
+            // DAY 7
+            { id: 21, day: 7, name: "Ristorante Pizzeria Sottosopra", town: "באבנו", rating: 4.5, reviews: 1350, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם מאג'ורה", priceRange: "€18 – €30", dishes: ["פיצות דקות ופריכות", "ספגטי בולונז", "פסטה פירות ים", "שניצלים עם צ'יפס"], notes: "ממש מעבר לפינה מ-Elvezia Boutique בבאבנו (2 דקות הליכה).", mapUrl: "https://maps.google.com/?q=Sottosopra+Baveno" },
+            { id: 22, day: 7, name: "Lupis Pub Baveno", town: "באבנו", rating: 4.6, reviews: 650, mealType: "ערב", style: "אמריקאי / פאב", region: "אגם מאג'ורה", priceRange: "€14 – €24", dishes: ["המבורגרים עסיסיים עם צ'דר", "טבעות בצל פריכות", "נאצ'וס", "צ'יפס אמריקאי לוהט"], notes: "פאב אמריקאי משפחתי מעולה בבאבנו.", mapUrl: "https://maps.google.com/?q=Lupis+Pub+Baveno" },
+            { id: 23, day: 7, name: "Gelateria Sandra", town: "באבנו", rating: 4.5, reviews: 550, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם מאג'ורה", priceRange: "€2.5 – €5", dishes: ["שוקולד מריר", "מסקרפונה", "תות שדה טבעי"], notes: "על הטיילת בבאבנו מול רציף הסירות.", mapUrl: "https://maps.google.com/?q=Gelateria+Sandra+Baveno" },
+
+            // DAY 8
+            { id: 24, day: 8, name: "Bar Stazione Baveno", town: "באבנו", rating: 4.5, reviews: 400, mealType: "בוקר", style: "קפה ומאפה", region: "אגם מאג'ורה", priceRange: "€4 – €7", dishes: ["קפוצ'ינו קרמי", "בריושים חמים", "מאפי בוקר פריכים"], notes: "פתוח מ-06:15 בבוקר ליד המלון.", mapUrl: "https://maps.google.com/?q=Bar+Stazione+Baveno" },
+            { id: 25, day: 8, name: "Ristorante Belvedere", town: "אי הדייגים (Isola dei Pescatori)", rating: 4.5, reviews: 1650, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם מאג'ורה", priceRange: "€25 – €45", dishes: ["רביולי גבינות טרי", "ריזוטו דגי אגם עדין", "פסטה עגבניות לילדים", "שניצל עגל Cotoletta"], notes: "ישיבה קסומה על מרפסת הנושקת למים באי הדייגים.", mapUrl: "https://maps.google.com/?q=Ristorante+Belvedere+Isola+dei+Pescatori" },
+            { id: 26, day: 8, name: "Gelateria K2", town: "סטרזה", rating: 4.6, reviews: 1850, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם מאג'ורה", priceRange: "€3 – €6", dishes: ["שוקולד מריר אינטנסיבי", "גלידת אגוזי לוז Nocciola Piemonte", "שמנת אמיתית"], notes: "הגלידריה המפורסמת והנחשבת ביותר באגם מאג'ורה!", mapUrl: "https://maps.google.com/?q=Gelateria+K2+Stresa" },
+            { id: 27, day: 8, name: "Trattoria La Botte", town: "סטרזה", rating: 4.5, reviews: 1400, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם מאג'ורה", priceRange: "€20 – €35", dishes: ["ניוקי ב-4 גבינות", "פסטה עם פטריות פורצ'יני", "פיצות דקות"], notes: "טרטוריה איטלקית חמה ומסורתית במרכז סטרזה.", mapUrl: "https://maps.google.com/?q=Trattoria+La+Botte+Stresa" },
+
+            // DAY 9
+            { id: 28, day: 9, name: "Rifugio Genziana", town: "פסגת מונטה מוטרונה", rating: 4.4, reviews: 1150, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם מאג'ורה", priceRange: "€18 – €30", dishes: ["פולנטה חמה עם גבינות הרים", "פסטה ביתית", "המבורגרים אלפיניים עם צ'יפס", "נקניקיות צלויות"], notes: "בקתה הררית מול נוף 7 אגמים ליד מגלשות האלפינלנד.", mapUrl: "https://maps.google.com/?q=Rifugio+Genziana+Mottarone" },
+            { id: 29, day: 9, name: "Ristorante Posta", town: "באבנו", rating: 4.5, reviews: 1100, mealType: "ערב", style: "איטלקי קלאסי", region: "אגם מאג'ורה", priceRange: "€20 – €35", dishes: ["פסטות עשירות בעבודת יד", "מבחר פיצות מצוין", "שניצל עגל פריך", "טירמיסו"], notes: "מסעדה איטלקית מוקפדת בכיכר המרכזית בבאבנו.", mapUrl: "https://maps.google.com/?q=Ristorante+Posta+Baveno" },
+
+            // DAY 10
+            { id: 30, day: 10, name: "Ristorante Pizzeria Svizzero", town: "אסקונה (שווייץ)", rating: 4.5, reviews: 1300, mealType: "צהריים", style: "איטלקי קלאסי", region: "שווייץ", priceRange: "CHF 25 – 45", dishes: ["פיצות איטלקיות מעולות", "פסטה בולונז וקרבונרה", "שניצל וינאי ענק עם צ'יפס", "המבורגר שוויצרי מובחר"], notes: "מרפסת שמש יפהפייה ישירות על הטיילת הצבעונית באסקונה.", mapUrl: "https://maps.google.com/?q=Ristorante+Svizzero+Ascona" },
+            { id: 31, day: 10, name: "Pasticceria Marnin", town: "אסקונה (שווייץ)", rating: 4.7, reviews: 950, mealType: "גלידה/קינוח", style: "קפה ומאפה", region: "שווייץ", priceRange: "CHF 5 – 12", dishes: ["עוגיות אמרטי רכות (Amaretti Morbidi)", "פנטונה מסורתי", "שטרודל תפוחים חם"], notes: "קונדיטוריה היסטורית שנוסדה בשנת 1852.", mapUrl: "https://maps.google.com/?q=Pasticceria+Marnin+Ascona" },
+
+            // DAY 11
+            { id: 32, day: 11, name: "Pizzeria Ristorante Leon d'Oro (Orta)", town: "אורטה סן ג'וליו", rating: 4.5, reviews: 1850, mealType: "צהריים", style: "איטלקי קלאסי", region: "אגם מאג'ורה", priceRange: "€20 – €35", dishes: ["פיצות דקות", "פסטת טרופיה בפסטו ביתי", "קוטלטה (שניצל) וצ'יפס לילדים"], notes: "מרפסת קסומה בכיכר המרכזית מול האי סן ג'וליו.", mapUrl: "https://maps.google.com/?q=Leon+d'Oro+Orta+San+Giulio" },
+            { id: 33, day: 11, name: "Arte del Gelato", town: "אורטה סן ג'וליו", rating: 4.7, reviews: 1200, mealType: "גלידה/קינוח", style: "גלידריית בוטיק", region: "אגם מאג'ורה", priceRange: "€3 – €6", dishes: ["אגוזי לוז פיימונטזיים IGP", "שוקולד אצטקי מריר", "פיסטוק מלוח"], notes: "גלידריית בוטיק עטורת פרסים. חובה לטעום את אגוזי הלוז!", mapUrl: "https://maps.google.com/?q=Arte+del+Gelato+Orta+San+Giulio" },
+
+            // DAY 12
+            { id: 34, day: 12, name: "Volandia Flight Bistro", town: "מוזיאון וולנדיה (ליד מלפנסה)", rating: 4.2, reviews: 600, mealType: "צהריים", style: "אמריקאי / פאב", region: "אגם מאג'ורה", priceRange: "€8 – €15", dishes: ["פוקצ'ות וטוסטים חמים", "שניצלונים וצ'יפס לילדים", "פיצות אישיות"], notes: "בתוך מוזיאון וולנדיה, 3 דקות מסניף Noleggiare לפני החזרת הרכבים.", mapUrl: "https://maps.google.com/?q=Volandia+Museum" }
+        ];
+
+        let selectedItineraryDay = 1;
+
+        window.onload = function() {
+            renderItineraryDaysBar();
+            selectItineraryDay(1);
+            filterRestaurants();
+        };
+
+        // Main Tab Switcher
+        function switchMainTab(tabName) {
+            document.querySelectorAll('nav .tab-btn').forEach(btn => btn.classList.remove('active'));
+            const activeBtn = document.getElementById(`tab-btn-${tabName}`);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            const tabIds = ['itinerary', 'restaurants', 'rental', 'gardaland', 'tickets'];
+            tabIds.forEach(id => {
+                const sec = document.getElementById(`view-${id}`);
+                if (sec) sec.classList.add('hidden');
+            });
+
+            const targetSec = document.getElementById(`view-${tabName}`);
+            if (targetSec) targetSec.classList.remove('hidden');
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderItineraryDaysBar() {
+            const container = document.getElementById('itinerary-days-bar');
+            if (!container) return; // Safeguard against null
+            container.innerHTML = '';
+            for (let i = 1; i <= 12; i++) {
+                const btn = document.createElement('button');
+                btn.id = `itin-day-btn-${i}`;
+                btn.className = `py-2 px-1 text-center rounded-xl font-bold text-xs border transition-all touch-manipulation min-h-[44px] ${i === 1 ? 'bg-emerald-700 text-white border-emerald-700 shadow' : 'bg-stone-50 text-stone-700 border-stone-200 hover:bg-stone-100'}`;
+                btn.onclick = () => selectItineraryDay(i);
+                btn.innerHTML = `<span class="block text-[10px] font-normal opacity-85">יום</span>${i}`;
+                container.appendChild(btn);
+            }
+        }
+
+        function selectItineraryDay(dayNum) {
+            selectedItineraryDay = dayNum;
+
+            for (let i = 1; i <= 12; i++) {
+                const btn = document.getElementById(`itin-day-btn-${i}`);
+                if (btn) {
+                    btn.className = `py-2 px-1 text-center rounded-xl font-bold text-xs border transition-all touch-manipulation min-h-[44px] ${i === dayNum ? 'bg-emerald-700 text-white border-emerald-700 shadow-md ring-2 ring-emerald-200' : 'bg-stone-50 text-stone-700 border-stone-200 hover:bg-stone-100'}`;
+                }
+            }
+
+            const dayData = itineraryData.find(d => d.day === dayNum);
+            if (!dayData) return;
+
+            const badge = document.getElementById('itinerary-current-region-badge');
+            if (badge) badge.innerText = dayData.region;
+
+            const container = document.getElementById('itinerary-day-detail-container');
+            if (!container) return; // Safeguard against null
+
+            // Defensive weather fallback to guarantee safety against missing properties
+            const weather = dayData.weather || {
+                icon: "🌤️",
+                tempDay: "24°C",
+                tempNight: "14°C",
+                condition: "נוח ונעים",
+                clothing: "לבוש שכבות נוח ונעלי הליכה.",
+                packingTip: "עליונית קלה לשעות הערב."
+            };
+            
+            // Filter restaurants for this specific day
+            const dayMeals = restaurantsData.filter(r => r.day === dayNum);
+            const mealsHtml = dayMeals.map(meal => {
+                let badgeColor = "bg-emerald-100 text-emerald-900 border border-emerald-200";
+                if (meal.mealType === "צהריים") badgeColor = "bg-sky-100 text-sky-900 border border-sky-200";
+                if (meal.mealType === "ערב") badgeColor = "bg-red-100 text-red-900 border border-red-200";
+                if (meal.mealType === "גלידה/קינוח") badgeColor = "bg-amber-100 text-amber-900 border border-amber-200";
+
+                return `
+                    <div class="bg-white p-3.5 rounded-xl border border-stone-200 shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs mb-1.5">
+                                <span class="badge-soft ${badgeColor}">${meal.mealType}</span>
+                                <span class="font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">⭐ ${meal.rating} (${meal.reviews})</span>
+                            </div>
+                            <h5 class="font-bold text-stone-900 text-sm">${meal.name}</h5>
+                            <p class="text-xs text-stone-500">${meal.town} • ${meal.priceRange}</p>
+                            <p class="text-[11px] text-stone-700 mt-2 font-medium">🍴 ${meal.dishes.join(', ')}</p>
+                            <p class="text-[11px] text-stone-500 mt-1">💡 ${meal.notes}</p>
+                        </div>
+                        <div class="mt-3 pt-2 border-t border-stone-100 flex justify-end">
+                            <a href="${meal.mapUrl}" target="_blank" class="text-xs text-emerald-700 hover:underline font-bold flex items-center gap-1">ניווט במפה ↗</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Build Timeline List
+            const timelineHtml = dayData.timeline.map(item => `
+                <div class="flex items-start gap-3 border-r-2 border-emerald-500 pr-3 relative">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-700 absolute -right-[6px] top-1.5 ring-4 ring-emerald-100"></span>
+                    <div>
+                        <span class="text-xs font-bold text-emerald-900 bg-emerald-100/90 px-2 py-0.5 rounded-md border border-emerald-200">${item.time}</span>
+                        <p class="text-xs sm:text-sm text-stone-700 mt-1 leading-relaxed">${item.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            const hotelDisplayHtml = dayData.hotelMapUrl 
+                ? `<a href="${dayData.hotelMapUrl}" target="_blank" rel="noopener noreferrer" class="text-emerald-800 hover:text-emerald-950 font-bold underline decoration-emerald-500/60 hover:decoration-emerald-800 transition-all inline-flex items-center gap-1">📍 ${dayData.hotel} ↗</a>`
+                : `<span class="text-emerald-950 font-bold">${dayData.hotel}</span>`;
+
+            container.innerHTML = `
+                <!-- Day Header Banner -->
+                <div class="bg-white p-4 sm:p-6 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 border-b border-stone-100 pb-4">
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="badge-soft bg-emerald-700 text-white">יום ${dayData.day}</span>
+                                <span class="text-xs font-semibold text-stone-500">${dayData.date}</span>
+                            </div>
+                            <h3 class="text-lg sm:text-2xl font-black text-stone-900">${dayData.title}</h3>
+                            <p class="text-xs sm:text-sm text-stone-600 mt-1 leading-relaxed">${dayData.summary}</p>
+                        </div>
+                        <div class="bg-emerald-50/80 border border-emerald-200/80 p-3 sm:p-3.5 rounded-xl text-xs space-y-1 shrink-0">
+                            <div><strong>יציאה:</strong> ${dayData.hours.depart}</div>
+                            <div><strong>חזרה למלון:</strong> ${dayData.hours.returnTime}</div>
+                            <div><strong>זמן נסיעה כולל:</strong> ${dayData.hours.driveTotal}</div>
+                            <div><strong>מלון לינה:</strong> ${hotelDisplayHtml}</div>
+                        </div>
+                    </div>
+
+                    <!-- Weather & Recommended Clothing Banner -->
+                    <div class="bg-gradient-to-r from-sky-50 via-blue-50/60 to-emerald-50/60 p-3.5 sm:p-4 rounded-xl border border-sky-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                        <div class="flex items-start sm:items-center gap-3">
+                            <span class="text-2xl sm:text-3xl p-1.5 bg-white rounded-xl shadow-xs border border-sky-200 shrink-0">${weather.icon}</span>
+                            <div class="space-y-0.5">
+                                <div class="flex items-center gap-2 font-bold text-sky-950 text-xs sm:text-sm">
+                                    <span>מזג אוויר צפוי:</span>
+                                    <span class="bg-sky-200/80 text-sky-900 px-2 py-0.5 rounded-md font-extrabold text-xs">יום: ${weather.tempDay} | לילה: ${weather.tempNight}</span>
+                                    <span class="font-medium text-sky-800 hidden sm:inline">• ${weather.condition}</span>
+                                </div>
+                                <p class="text-stone-700 leading-relaxed">
+                                    <strong>👕 ביגוד מומלץ:</strong> ${weather.clothing}
+                                </p>
+                                <p class="text-emerald-800 font-medium">
+                                    <strong>🎒 טיפ אריזה להיום:</strong> ${weather.packingTip}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 Pillars Cards: Grandparents, Kids, Parking -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-3.5 text-xs sm:text-sm pt-1">
+                        <div class="bg-emerald-50/70 p-3.5 rounded-xl border border-emerald-200 space-y-1">
+                            <h4 class="font-bold text-emerald-950 flex items-center gap-1.5 text-xs sm:text-sm">
+                                <span>👵</span> זווית הנגישות ומנוחה לסבים:
+                            </h4>
+                            <p class="text-emerald-900 leading-relaxed text-xs">${dayData.grandparents}</p>
+                        </div>
+
+                        <div class="bg-sky-50/70 p-3.5 rounded-xl border border-sky-200 space-y-1">
+                            <h4 class="font-bold text-sky-950 flex items-center gap-1.5 text-xs sm:text-sm">
+                                <span>👧</span> אקשן ועניין לילדים:
+                            </h4>
+                            <p class="text-sky-900 leading-relaxed text-xs">${dayData.kids}</p>
+                        </div>
+
+                        <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200 space-y-1">
+                            <h4 class="font-bold text-stone-900 flex items-center gap-1.5 text-xs sm:text-sm">
+                                <span>🅿️</span> פתרון חניה (ללא מגבלת גובה לוואן):
+                            </h4>
+                            <p class="text-stone-700 leading-relaxed text-xs">${dayData.parking}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schedule & Meals Split Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
+                    <!-- Left: Hourly Timeline (7 cols) -->
+                    <div class="lg:col-span-7 bg-white p-4 sm:p-5 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                        <h4 class="font-bold text-stone-900 text-sm sm:text-base flex items-center gap-2 border-b border-stone-100 pb-2">
+                            <span>⏱️</span> לוח זמנים מפורט לפי שעות
+                        </h4>
+                        <div class="space-y-4 pr-1">
+                            ${timelineHtml}
+                        </div>
+                    </div>
+
+                    <!-- Right: Meals for the Day (5 cols) -->
+                    <div class="lg:col-span-5 bg-stone-50/60 p-4 sm:p-5 rounded-2xl border border-stone-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between border-b border-stone-200 pb-2">
+                            <h4 class="font-bold text-stone-900 text-sm sm:text-base flex items-center gap-2">
+                                <span>🍽️</span> ארוחות מתוכננות ליום זה
+                            </h4>
+                            <span class="text-xs text-stone-500 font-bold">${dayMeals.length} מקומות</span>
+                        </div>
+                        <div class="space-y-3">
+                            ${mealsHtml}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function filterRestaurants() {
+            const searchInput = document.getElementById('food-search-input');
+            const mealSelect = document.getElementById('food-filter-meal');
+            const styleSelect = document.getElementById('food-filter-style');
+            const regionSelect = document.getElementById('food-filter-region');
+            const daySelect = document.getElementById('food-filter-day');
+
+            if (!searchInput || !mealSelect || !styleSelect || !regionSelect || !daySelect) return;
+
+            const query = searchInput.value.toLowerCase().trim();
+            const meal = mealSelect.value;
+            const style = styleSelect.value;
+            const region = regionSelect.value;
+            const day = daySelect.value;
+
+            const filtered = restaurantsData.filter(spot => {
+                const matchQuery = query === '' || 
+                    spot.name.toLowerCase().includes(query) || 
+                    spot.town.toLowerCase().includes(query) || 
+                    spot.dishes.some(d => d.toLowerCase().includes(query)) ||
+                    spot.notes.toLowerCase().includes(query);
+
+                const matchMeal = meal === 'all' || spot.mealType === meal;
+                const matchStyle = style === 'all' || spot.style === style;
+                const matchRegion = region === 'all' || spot.region === region;
+                const matchDay = day === 'all' || spot.day.toString() === day;
+
+                return matchQuery && matchMeal && matchStyle && matchRegion && matchDay;
+            });
+
+            const container = document.getElementById('food-grid-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            const counter = document.getElementById('food-catalog-counter');
+
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-stone-500 bg-white rounded-2xl border border-stone-200">
+                        <span class="text-3xl block mb-2">🔎</span>
+                        לא נמצאו מקומות המתאימים לחיפוש ולסינונים. נסו לאפס את המסננים.
+                    </div>
+                `;
+                if (counter) counter.innerText = `מציג 0 מקומות`;
+                return;
+            }
+
+            filtered.forEach(spot => {
+                let badgeColor = "bg-emerald-100 text-emerald-900 border border-emerald-200";
+                if (spot.mealType === "צהריים") badgeColor = "bg-sky-100 text-sky-900 border border-sky-200";
+                if (spot.mealType === "ערב") badgeColor = "bg-red-100 text-red-900 border border-red-200";
+                if (spot.mealType === "גלידה/קינוח") badgeColor = "bg-amber-100 text-amber-900 border border-amber-200";
+
+                let styleIcon = "🍝";
+                if (spot.style === "אמריקאי / פאב") styleIcon = "🍔";
+                if (spot.style === "קפה ומאפה") styleIcon = "☕";
+                if (spot.style === "גלידריית בוטיק") styleIcon = "🍦";
+
+                const dishesHtml = spot.dishes.map(d => `<span class="bg-stone-100 text-stone-700 text-[11px] px-2 py-0.5 rounded-md">${d}</span>`).join(' ');
+
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl border border-stone-200 p-4 sm:p-5 shadow-sm hover:shadow-md transition-all flex flex-col justify-between space-y-3";
+                card.innerHTML = `
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-xs">
+                            <span class="badge-soft ${badgeColor}">${spot.mealType}</span>
+                            <div class="flex items-center gap-1 bg-emerald-50 text-emerald-950 border border-emerald-200 px-2 py-0.5 rounded-md font-bold">
+                                <span>⭐ ${spot.rating}</span>
+                                <span class="text-[10px] text-stone-500 font-normal">(${spot.reviews})</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-base font-bold text-stone-900 flex items-center gap-1.5">
+                                <span>${styleIcon}</span> ${spot.name}
+                            </h4>
+                            <p class="text-xs text-stone-500 mt-0.5">
+                                📍 ${spot.town} • <strong class="text-stone-700">${spot.priceRange}</strong>
+                            </p>
+                        </div>
+
+                        <div class="pt-1">
+                            <span class="block text-[11px] font-bold text-stone-500 mb-1">מנות מומלצות:</span>
+                            <div class="flex flex-wrap gap-1">
+                                ${dishesHtml}
+                            </div>
+                        </div>
+
+                        <div class="bg-stone-50 p-2.5 rounded-xl text-xs text-stone-600 border border-stone-100 mt-1">
+                            💡 ${spot.notes}
+                        </div>
+                    </div>
+
+                    <div class="pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+                        <span class="text-stone-400 font-medium">יום ${spot.day} במסלול</span>
+                        <a href="${spot.mapUrl}" target="_blank" class="bg-emerald-700 hover:bg-emerald-800 text-white font-medium px-3 py-2 rounded-lg transition-all flex items-center gap-1 touch-manipulation min-h-[38px]">
+                            <span>ניווט ב-Google Maps</span> ↗
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            if (counter) counter.innerText = `מציג ${filtered.length} מתוך ${restaurantsData.length} מקומות`;
+        }
+
+        // Reset Filter function
+        function resetFoodFilters() {
+            const searchInput = document.getElementById('food-search-input');
+            const mealSelect = document.getElementById('food-filter-meal');
+            const styleSelect = document.getElementById('food-filter-style');
+            const regionSelect = document.getElementById('food-filter-region');
+            const daySelect = document.getElementById('food-filter-day');
+
+            if (searchInput) searchInput.value = '';
+            if (mealSelect) mealSelect.value = 'all';
+            if (styleSelect) styleSelect.value = 'all';
+            if (regionSelect) regionSelect.value = 'all';
+            if (daySelect) daySelect.value = 'all';
+            filterRestaurants();
+        }
+    </script>
+</body>
+</html>
