@@ -53,15 +53,77 @@
             justify-content: center;
             touch-action: manipulation;
         }
+
+        .italy-header {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .italy-flag-bg {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            direction: ltr;
+        }
+
+        .italy-flag-bg > span {
+            flex: 1;
+        }
+
+        .italy-flag-bg > span:nth-child(1) { background: #009246; }
+        .italy-flag-bg > span:nth-child(2) { background: #f7f7f5; }
+        .italy-flag-bg > span:nth-child(3) { background: #ce2b37; }
+
+        .italy-header-veil {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 70% at 50% 50%, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.18) 55%, rgba(0,0,0,0.12) 100%);
+        }
+
+        .italy-title-card {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.12),
+                inset 0 0 0 1px rgba(0, 146, 70, 0.08);
+        }
+
+        .italy-tricolor-bar {
+            display: flex;
+            direction: ltr;
+            height: 5px;
+        }
+
+        .italy-tricolor-bar > span { flex: 1; }
+        .italy-tricolor-bar > span:nth-child(1) { background: #009246; }
+        .italy-tricolor-bar > span:nth-child(2) { background: #ffffff; }
+        .italy-tricolor-bar > span:nth-child(3) { background: #ce2b37; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-emerald-100 selection:text-emerald-900">
 
-    <header class="bg-gradient-to-l from-emerald-900 via-emerald-800 to-teal-900 text-white shadow-md border-b border-emerald-950">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 sm:py-7 text-center">
-            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white drop-shadow-sm">
-                המדריך המשפחתי המלא למשפחת ברק ואלטר: צפון איטליה
-            </h1>
+    <header class="italy-header shadow-md border-b border-stone-300">
+        <div class="italy-flag-bg" aria-hidden="true">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="italy-header-veil" aria-hidden="true"></div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-7 sm:py-9 text-center">
+            <div class="italy-title-card inline-block max-w-3xl w-full rounded-2xl px-5 sm:px-8 py-5 sm:py-6">
+                <div class="italy-tricolor-bar rounded-full overflow-hidden mb-3 sm:mb-4 max-w-[140px] mx-auto" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </div>
+                <p class="text-[11px] sm:text-xs font-bold tracking-[0.22em] uppercase text-stone-500 mb-2" dir="ltr">
+                    Italia · Lago di Garda &amp; Lago Maggiore
+                </p>
+                <h1 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-snug">
+                    <span class="text-stone-900">המדריך המשפחתי המלא למשפחת ברק ואלטר:</span>
+                    <span class="bg-gradient-to-l from-[#009246] via-stone-800 to-[#ce2b37] bg-clip-text text-transparent"> צפון איטליה</span>
+                </h1>
+                <div class="italy-tricolor-bar rounded-full overflow-hidden mt-3 sm:mt-4 max-w-[140px] mx-auto" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
         </div>
     </header>
 
