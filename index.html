@@ -65,6 +65,11 @@
             <p class="text-xs sm:text-base text-emerald-100 mt-2 max-w-2xl mx-auto font-normal">
                 11–22 בספטמבר • אגם גארדה, אגם מאג'ורה והסביבה • תכנון מותאם לסבים, הורים וילדים
             </p>
+            <p class="text-[11px] sm:text-sm text-emerald-200/95 mt-2 font-medium tracking-wide" dir="ltr">
+                Wizz Air • PNR <span class="font-bold text-white">SNRB8T</span> •
+                W46406 TLV→MXP 11/9 10:55–14:05 •
+                W46403 MXP→TLV 22/9 13:05–18:00
+            </p>
         </div>
     </header>
 
@@ -307,6 +312,47 @@
         </section>
 
         <section id="view-logistics" class="space-y-4 hidden">
+            <!-- Flights Card -->
+            <div class="bg-white p-5 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                    <h3 class="text-base font-bold text-stone-900 flex items-center gap-2">
+                        <span>✈️</span> פרטי הטיסות (Wizz Air) – 6 נוסעים
+                    </h3>
+                    <span class="self-start px-3 py-1 bg-emerald-100 text-emerald-900 font-bold text-xs rounded-full" dir="ltr">
+                        PNR: SNRB8T
+                    </span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+                    <div class="p-3.5 rounded-2xl border border-emerald-200 bg-emerald-50/60 space-y-2">
+                        <div class="flex items-center justify-between gap-2">
+                            <strong class="text-emerald-950">הלוך • יום ו' 11 בספטמבר</strong>
+                            <span class="font-bold text-emerald-800" dir="ltr">W46406</span>
+                        </div>
+                        <p class="text-stone-700 leading-relaxed">
+                            <strong>TLV (טרמינל 1)</strong> המראה <span dir="ltr" class="font-bold">10:55</span>
+                            → <strong>MXP</strong> נחיתה <span dir="ltr" class="font-bold">14:05</span>
+                            (משך כ־4:10 שעות).
+                        </p>
+                        <p class="text-stone-500">אחרי הנחיתה: דרכונים, מזוודות, שאטל Noleggiare מדלת 18 (קומה 2).</p>
+                    </div>
+                    <div class="p-3.5 rounded-2xl border border-amber-200 bg-amber-50/70 space-y-2">
+                        <div class="flex items-center justify-between gap-2">
+                            <strong class="text-amber-950">חזור • יום ג' 22 בספטמבר</strong>
+                            <span class="font-bold text-amber-900" dir="ltr">W46403</span>
+                        </div>
+                        <p class="text-stone-700 leading-relaxed">
+                            <strong>MXP טרמינל 1</strong> המראה <span dir="ltr" class="font-bold">13:05</span>
+                            → <strong>TLV</strong> נחיתה <span dir="ltr" class="font-bold">18:00</span>
+                            (משך כ־3:55 שעות).
+                        </p>
+                        <p class="text-amber-900 font-medium">
+                            ⚠️ צ'ק־אין אונליין עד <span dir="ltr">10:05</span> (שעון איטליה) ב־22/9.
+                            להגיע לטרמינל עד ~10:30 (כ־2.5 שעות לפני הטיסה ל־6 נוסעים).
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
                 <!-- Open Parking for Vans Card -->
@@ -410,6 +456,7 @@
                             <li>רישיון נהיגה ישראלי מפלסטיק (מקורי).</li>
                             <li>רישיון בינלאומי מנייר (ממס"י) לכל נהג.</li>
                             <li>דרכונים בתוקף לכל המשפחה.</li>
+                            <li>קוד הזמנת Wizz: <span dir="ltr" class="font-bold">SNRB8T</span> (W46406 / W46403).</li>
                         </ul>
                     </div>
                     <div class="p-3.5 bg-stone-50 rounded-2xl border border-stone-200">
@@ -445,39 +492,41 @@
             {
                 day: 1,
                 date: "11 בספטמבר (יום ו')",
-                title: "נחיתה במילאנו, עצירת צהריים באגם איסאו והתאקלמות בפסקיירה",
+                title: "טיסת W46406 למילאנו, איסוף רכבים, צהריים באגם איסאו והתאקלמות בפסקיירה",
                 region: "אגם גארדה",
-                hours: { depart: "איסוף רכב: 14:00", returnTime: "הגעה למלון: 18:45", driveTotal: "כשעתיים ורבע נטו (עם עצירה מרווחת באמצע)" },
+                hours: { depart: "המראה TLV: 10:55 • נחיתה MXP: 14:05", returnTime: "הגעה למלון: ~19:50", driveTotal: "כשעתיים ורבע נטו אחרי איסוף הרכבים" },
                 weather: {
                     temp: "26°C / 16°C",
                     condition: "שמשי ונעים",
                     clothing: "חולצה קצרה ומכנסיים נוחים לטיסה ולנסיעה; עליונית קלה לשעות הערב בטיילת מול רוח האגם.",
-                    packingTip: "הכינו בתיק העלייה למטוס ג'קט קל לשעות הערב בפסקיירה."
+                    packingTip: "הכינו בתיק העלייה למטוס ג'קט קל לשעות הערב בפסקיירה. שמרו את PNR SNRB8T בטלפון."
                 },
                 ticketInfo: {
-                    statusText: "נוהל השכרת רכב Noleggiare ועצירת צהריים",
-                    onlineUrl: null,
+                    statusText: "טיסת הלוך W46406 + השכרת רכב Noleggiare",
+                    onlineUrl: "https://www.wizzair.com",
                     details: [
+                        "Wizz Air W46406: TLV טרמינל 1 10:55 → MXP 14:05 (PNR: SNRB8T, 6 נוסעים).",
                         "איסוף הוואן (SpaceTourer) וה-SUV (5008) בסניף סומה לומברדו (שאטל מדלת 18 קומה 2).",
-                        "מסלול איטלקי מלא 100% – אין צורך בהיתר מעבר גבול או עלויות נוספות.",
                         "רישיון פלסטיק ישראלי מקורי + רישיון בינלאומי מנייר (ממס\"י) חובה לכל נהג."
                     ]
                 },
                 highlights: [
+                    { icon: "✈️", name: "טיסת הלוך W46406 (TLV→MXP)", mapUrl: "https://maps.google.com/?q=Milan+Malpensa+Airport", desc: "המראה מתל אביב 10:55, נחיתה במלפנסה 14:05. קוד הזמנה SNRB8T." },
                     { icon: "🚗", name: "סוכנות Noleggiare מלפנסה", mapUrl: "https://maps.google.com/?q=Noleggiare+Malpensa+Somma+Lombardo", desc: "איסוף הרכבים, צילום וידאו מקיף סביב המרכב ויציאה לאוטוסטרדה A4 מזרחה." },
-                    { icon: "🍕", name: "עצירת צהריים: Pizzeria Da Maria", mapUrl: "https://maps.google.com/?cid=4684189363587833910", desc: "בדיוק באמצע הדרך בסארניקו שעל אגם איסאו (ציון 4.6⭐) – פתוחה ברציפות אחה\"צ, פיצות קריספיות וטיילת יפהפייה." },
-                    { icon: "🏰", name: "טיילת החומה בפסקיירה", mapUrl: "https://maps.google.com/?q=Peschiera+del+Garda+Lungolago", desc: "הליכה מישורית ונעימה מול מי האגם והברווזים ללא מדרגות." }
+                    { icon: "🍕", name: "עצירת צהריים: Pizzeria Da Maria", mapUrl: "https://maps.google.com/?cid=4684189363587833910", desc: "בדיוק באמצע הדרך בסארניקו שעל אגם איסאו (ציון 4.6⭐) – פתוחה ברציפות אחה\"צ, פיצות קריספיות וטיילת יפהפייה." }
                 ],
                 kids: "מתיחת רגליים בגני המשחקים על קו המים בסארניקו, האכלת ברווזים באגם איסאו ופיצה ראשונה באיטליה.",
                 parking: "בסארניקו: חניוני שטח פתוחים ללא הגבלת גובה ברחוב Lungolago; בפסקיירה: חניה פתוחה וחינמית בחצר מלון Bel Sito.",
                 timeline: [
-                    { time: "13:00 - 14:00", desc: "נחיתה במלפנסה, ביקורת דרכונים, איסוף מזוודות. עולים לקומת המראות לדלת 18 ומחייגים לשאטל Noleggiare (<span dir='ltr' class='font-bold'>+39-334-9486716</span>)." },
-                    { time: "14:00 - 15:00", desc: "הגעה לסניף <a href='https://maps.google.com/?q=Via+Cipriano+Facchinetti+51+Somma+Lombardo' target='_blank' class='font-bold text-emerald-800 underline'>Noleggiare ↗</a>, חתימת חוזים, צילום וידאו והתארגנות לנסיעה." },
-                    { time: "15:00 - 16:30", desc: "נסיעה של כשעה וחצי על אוטוסטרדה A4 מזרחה ישירות אל <a href='https://maps.google.com/?cid=13313415484304402618' target='_blank' class='font-bold text-emerald-800 underline'>טיילת סארניקו (אגם איסאו) ↗</a>." },
-                    { time: "16:30 - 17:50", desc: "ארוחת צהריים טעימה ומשביעה ב-<a href='https://maps.google.com/?cid=4684189363587833910' target='_blank' class='font-bold text-emerald-800 underline'>Pizzeria Da Maria ↗</a> (פתוח ברציפות!), מתיחת רגליים וגן שעשועים." },
-                    { time: "17:50 - 18:45", desc: "המשך נסיעה קצרה ונוחה של כ-50 דקות (65 ק\"מ) ישירות ל-<a href='https://maps.google.com/?cid=2354751992871040838' target='_blank' class='font-bold text-emerald-800 underline'>Hotel Bel Sito בפסקיירה ↗</a>." },
-                    { time: "18:45 - 19:45", desc: "צ'ק-אין נינוח, חניית שני הרכבים בחצר המלון, פריקת מזוודות ומנוחה בחדרים." },
-                    { time: "19:45 - 21:15", desc: "יציאה רגלית קלה (3 דקות מהמלון!) לארוחת ערב איטלקית במסעדת <a href='https://maps.google.com/?q=Sosta+e+Gusta+Peschiera' target='_blank' class='font-bold text-emerald-800 underline'>Sosta e Gusta ↗</a>." }
+                    { time: "10:55", desc: "המראה מתל אביב (טרמינל 1) בטיסת <strong dir='ltr'>Wizz Air W46406</strong> – קוד הזמנה <strong dir='ltr'>SNRB8T</strong>." },
+                    { time: "14:05", desc: "נחיתה במלפנסה (MXP). ביקורת דרכונים ואיסוף מזוודות (צפו לכ־45–75 דקות עם 6 נוסעים)." },
+                    { time: "15:00 - 15:20", desc: "עולים לקומת המראות לדלת 18 ומחייגים לשאטל Noleggiare (<span dir='ltr' class='font-bold'>+39-334-9486716</span>)." },
+                    { time: "15:20 - 16:20", desc: "הגעה לסניף <a href='https://maps.google.com/?q=Via+Cipriano+Facchinetti+51+Somma+Lombardo' target='_blank' class='font-bold text-emerald-800 underline'>Noleggiare ↗</a>, חתימת חוזים, צילום וידאו והתארגנות לנסיעה." },
+                    { time: "16:20 - 17:50", desc: "נסיעה של כשעה וחצי על אוטוסטרדה A4 מזרחה ישירות אל <a href='https://maps.google.com/?cid=13313415484304402618' target='_blank' class='font-bold text-emerald-800 underline'>טיילת סארניקו (אגם איסאו) ↗</a>." },
+                    { time: "17:50 - 19:00", desc: "ארוחת צהריים מאוחרת ומשביעה ב-<a href='https://maps.google.com/?cid=4684189363587833910' target='_blank' class='font-bold text-emerald-800 underline'>Pizzeria Da Maria ↗</a> (פתוח ברציפות!), מתיחת רגליים וגן שעשועים." },
+                    { time: "19:00 - 19:50", desc: "המשך נסיעה קצרה ונוחה של כ-50 דקות (65 ק\"מ) ישירות ל-<a href='https://maps.google.com/?cid=2354751992871040838' target='_blank' class='font-bold text-emerald-800 underline'>Hotel Bel Sito בפסקיירה ↗</a>." },
+                    { time: "19:50 - 20:30", desc: "צ'ק-אין נינוח, חניית שני הרכבים בחצר המלון, פריקת מזוודות ומנוחה קצרה בחדרים." },
+                    { time: "20:30 - 22:00", desc: "יציאה רגלית קלה (3 דקות מהמלון!) לארוחת ערב איטלקית במסעדת <a href='https://maps.google.com/?q=Sosta+e+Gusta+Peschiera' target='_blank' class='font-bold text-emerald-800 underline'>Sosta e Gusta ↗</a>." }
                 ]
             },
             {
@@ -871,42 +920,41 @@
             {
                 day: 12,
                 date: "22 בספטמבר (יום ג')",
-                title: "מוזיאון התעופה Volandia, החזרת רכבים וטיסה חזרה",
+                title: "החזרת רכבים וטיסת חזרה W46403 לתל אביב",
                 region: "אגם מאג'ורה",
-                hours: { depart: "יציאה מבאבנו: 08:45", returnTime: "הגעה לשדה: 14:45", driveTotal: "כ-45 דקות נטו מבאבנו לוולנדיה" },
+                hours: { depart: "יציאה מבאבנו: ~07:45", returnTime: "המראה MXP: 13:05 → TLV 18:00", driveTotal: "כ-50 דקות מבאבנו ל-Noleggiare (בלי Volandia – אין זמן)" },
                 weather: {
                     temp: "24°C / 14°C",
                     condition: "בהיר ונוח לטיסה",
                     clothing: "בגדי טיסה נוחים, נעליים קלות, ג'קט קל למטוס הממוזג.",
-                    packingTip: "הקפידו לארוז את כל נוזלי השמן זית והיין במזוודות הגדולות הנשלחות לבטן המטוס."
+                    packingTip: "צ'ק־אין אונליין עד 10:05! אריזו שמן זית ויין במזוודות השליחה בלבד. אל תתכננו Volandia – ההמראה ב־13:05."
                 },
                 ticketInfo: {
-                    statusText: "כרטיסים לוולנדיה בקופות / אונליין (פתיחה ב-10:00)",
-                    onlineUrl: "https://volandia.it",
+                    statusText: "טיסת חזרה W46403 – צ'ק־אין אונליין עד 10:05",
+                    onlineUrl: "https://www.wizzair.com",
                     details: [
-                        "כרטיס כניסה: כ-€14 למבוגר, כ-€9 לילד, מתחת לגיל 3 חינם.",
-                        "שעות פתיחה: המוזיאון נפתח ב-10:00 בדיוק. הגעה בפתיחה מבטיחה כניסה חלקה.",
-                        "מיקום מושלם: 3 דקות נסיעה מסניף החזרת הרכב של Noleggiare Somma Lombardo!"
+                        "Wizz Air W46403: MXP טרמינל 1 13:05 → TLV 18:00 (PNR: SNRB8T, 6 נוסעים, משך כ־3:55).",
+                        "צ'ק־אין אונליין נסגר ב־10:05 שעון איטליה ב־22/9 – לבצע בערב שלפני או מוקדם בבוקר.",
+                        "יעד: להגיע לטרמינל 1 עד ~10:30 (כ־2.5 שעות לפני הטיסה). אין זמן ל־Volandia לפני הטיסה הזו."
                     ]
                 },
                 highlights: [
-                    { icon: "✈️", name: "מוזיאון התעופה Volandia", mapUrl: "https://maps.google.com/?cid=15302196614407886475", desc: "עולם התעופה הגדול באיטליה: עשרות מטוסים היסטוריים, מסוקים, סימולטורים ומתחם חלל." },
-                    { icon: "🚗", name: "סניף Noleggiare Somma Lombardo", mapUrl: "https://maps.google.com/?q=Via+Cipriano+Facchinetti+51+Somma+Lombardo", desc: "החזרה חלקה ומהירה של הוואן וה-SUV, בדיקת רכב ועלייה לשאטל לטרמינל." },
-                    { icon: "🛫", name: "טרמינל 1 מלפנסה (MXP)", mapUrl: "https://maps.google.com/?q=Milan+Malpensa+Airport+Terminal+1", desc: "בידוק ביטחוני, דיוטי פרי, פיצה איטלקית אחרונה ועלייה לטיסה הביתה." }
+                    { icon: "🚗", name: "החזרת רכבים ב-Noleggiare", mapUrl: "https://maps.google.com/?q=Via+Cipriano+Facchinetti+51+Somma+Lombardo", desc: "תדלוק מלא, בדיקת רכב, סגירת חוזה ושאטל לטרמינל 1." },
+                    { icon: "🛫", name: "טרמינל 1 מלפנסה (MXP)", mapUrl: "https://maps.google.com/?q=Milan+Malpensa+Airport+Terminal+1", desc: "בידוק ביטחוני, דיוטי פרי, ארוחה קלה בשדה ועלייה לטיסה." },
+                    { icon: "✈️", name: "טיסת חזרה W46403 (MXP→TLV)", mapUrl: "https://maps.google.com/?q=Milan+Malpensa+Airport+Terminal+1", desc: "המראה 13:05 מטרמינל 1, נחיתה בתל אביב 18:00. קוד הזמנה SNRB8T." }
                 ],
-                kids: "טיפוס לתאי טייס אמיתיים, סימולטורי טיסה מלהיבים ופיצה אחרונה לפני הטיסה.",
-                parking: "בוולנדיה: חניון המוזיאון הפתוח; בהמשך: החזרת הרכבים במגרש Noleggiare.",
+                kids: "יום נסיעה הביתה – חטיפים במכונית, משחקים בשדה התעופה וארוחה קלה לפני העלייה למטוס.",
+                parking: "החזרת הרכבים במגרש Noleggiare Somma Lombardo בלבד – ללא עצירת Volandia לפני טיסה של 13:05.",
                 timeline: [
-                    { time: "07:45 - 08:30", desc: "ארוחת בוקר במלון Elvezia, סגירת תיקים ואריזה סופית לקראת הטיסה." },
-                    { time: "08:30 - 08:45", desc: "צ'ק-אאוט מהיר במלון, העמסת כל המזוודות לשני הרכבים (וואן ו-SUV) ויציאה לדרך." },
-                    { time: "08:45 - 09:45", desc: "נסיעה של כ-45–50 דקות דרומה על אוטוסטרדה A8 ישירות אל <a href='https://maps.google.com/?cid=15302196614407886475' target='_blank' class='font-bold text-emerald-800 underline'>מוזיאון התעופה Volandia ↗</a>." },
-                    { time: "09:45 - 10:00", desc: "הגעה וחניה במגרש הפתוח בדיוק עם פתיחת השערים ב-10:00." },
-                    { time: "10:00 - 12:45", desc: "בילוי משפחתי מרתק ומרווח של כמעט 3 שעות בין האנגרי המטוסים הענקיים, סימולטורים ומתחם החלל." },
-                    { time: "12:45 - 13:30", desc: "ארוחת צהריים קלה וטעימה בביסטרו הטיסה של וולנדיה (Volandia Flight Bistro)." },
-                    { time: "13:30 - 14:00", desc: "נסיעה של 3 דקות, תדלוק מלא של שני הרכבים בתחנה הסמוכה, וכניסה למגרש <a href='https://maps.google.com/?q=Via+Cipriano+Facchinetti+51+Somma+Lombardo' target='_blank' class='font-bold text-emerald-800 underline'>Noleggiare Somma Lombardo ↗</a>." },
-                    { time: "14:00 - 14:30", desc: "בדיקה סופית של הרכבים, סגירת חוזה והעברת המזוודות לשאטל ללא שום תורים." },
-                    { time: "14:30 - 14:45", desc: "שאטל Noleggiare מוריד את המשפחה מול דלת טרמינל 1 במלפנסה." },
-                    { time: "14:45", desc: "התייצבות נינוחה בטרמינל 1 (3 שעות שלמות ומלאות לפני הטיסה) – בידוק ביטחוני, דיוטי פרי ועלייה למטוס ברוגע מוחלט!" }
+                    { time: "07:00 - 07:45", desc: "ארוחת בוקר מהירה במלון Elvezia, סגירת תיקים ואריזה סופית. לוודא שצ'ק־אין אונליין ל־W46403 כבר בוצע (עד 10:05)." },
+                    { time: "07:45 - 08:00", desc: "צ'ק־אאוט, העמסת כל המזוודות לשני הרכבים (וואן ו־SUV) ויציאה מבאבנו." },
+                    { time: "08:00 - 09:00", desc: "נסיעה של כ־50 דקות דרומה על A8 ישירות לאזור מלפנסה / <a href='https://maps.google.com/?q=Via+Cipriano+Facchinetti+51+Somma+Lombardo' target='_blank' class='font-bold text-emerald-800 underline'>Noleggiare Somma Lombardo ↗</a>." },
+                    { time: "09:00 - 09:30", desc: "תדלוק מלא של שני הרכבים בתחנה הסמוכה, ואז כניסה למגרש ההחזרה של Noleggiare." },
+                    { time: "09:30 - 10:15", desc: "בדיקה סופית של הרכבים, סגירת חוזה והעברת המזוודות לשאטל." },
+                    { time: "10:15 - 10:30", desc: "שאטל Noleggiare מוריד את המשפחה מול דלת <strong>טרמינל 1</strong> במלפנסה – יעד הגעה מומלץ לפני הטיסה." },
+                    { time: "10:30 - 12:15", desc: "מסירת מזוודות / בידוק ביטחוני ל־6 נוסעים, זמן רזרבה ומנוחה. ארוחה קלה / קפה בשדה (לא ב־Volandia)." },
+                    { time: "12:15 - 12:45", desc: "הליכה לשער ההמראה והמתנה לעלייה לטיסה." },
+                    { time: "13:05", desc: "המראה מ־MXP בטיסת <strong dir='ltr'>Wizz Air W46403</strong> – נחיתה בתל אביב בשעה <strong dir='ltr'>18:00</strong>." }
                 ]
             }
         ];
@@ -914,7 +962,7 @@
         // MASTER RESTAURANTS DATA (40 SPOTS)
         const restaurantsData = [
             // DAY 1
-            { id: 1, day: 1, name: "Pizzeria Da Maria", town: "סארניקו (אגם איסאו)", rating: 4.6, reviews: 1450, mealType: "צהריים", cuisine: "איטלקי קלאסי", region: "אגם גארדה", price: "€10 – €18", dishes: ["פיצה מרגריטה קריספית", "פוקאצ'ה חמה", "פסטה טרייה", "צ'יפס"], notes: "עצירת צהריים מושלמת באמצע הדרך ממלפנסה לפסקיירה. פתוחה ברציפות אחה\"צ ללא הפסקה!", mapUrl: "https://maps.google.com/?cid=4684189363587833910", menuUrl: "https://www.google.com/search?q=Pizzeria+Da+Maria+Sarnico+menu" },
+            { id: 1, day: 1, name: "Pizzeria Da Maria", town: "סארניקו (אגם איסאו)", rating: 4.6, reviews: 1450, mealType: "צהריים", cuisine: "איטלקי קלאסי", region: "אגם גארדה", price: "€10 – €18", dishes: ["פיצה מרגריטה קריספית", "פוקאצ'ה חמה", "פסטה טרייה", "צ'יפס"], notes: "ארוחת צהריים מאוחרת (~17:50) אחרי נחיתה ב־14:05. פתוחה ברציפות אחה\"צ!", mapUrl: "https://maps.google.com/?cid=4684189363587833910", menuUrl: "https://www.google.com/search?q=Pizzeria+Da+Maria+Sarnico+menu" },
             { id: 2, day: 1, name: "Ristorante Pizzeria Sosta e Gusta", town: "פסקיירה דל גארדה", rating: 4.6, reviews: 1200, mealType: "ערב", cuisine: "איטלקי קלאסי", region: "אגם גארדה", price: "€15 – €25", dishes: ["פיצה קפריצ'וזה", "ספגטי קרבונרה", "טירמיסו"], notes: "3 דקות הליכה רגלית מפתח מלון Bel Sito! מושלם לערב ההגעה ללא נהיגה.", mapUrl: "https://maps.google.com/?q=Sosta+e+Gusta+Peschiera", menuUrl: "https://www.sostaegusta.it" },
             { id: 3, day: 1, name: "Pasticceria Pavòn", town: "פסקיירה דל גארדה", rating: 4.8, reviews: 1200, mealType: "בוקר", cuisine: "קפה ומאפה", region: "אגם גארדה", price: "€3 – €7", dishes: ["בריוש פיסטוק", "מאפי וניל", "קפוצ'ינו איטלקי"], notes: "קונדיטוריה משובחת במרחק הליכה קצר מ-Bel Sito.", mapUrl: "https://maps.google.com/?q=Pasticceria+Pavon+Peschiera", menuUrl: "https://www.google.com/search?q=Pasticceria+Pavon+Peschiera+menu" },
             { id: 4, day: 1, name: "Gelateria La Cremeria del Borgo", town: "פסקיירה דל גארדה", rating: 4.7, reviews: 850, mealType: "גלידה/קינוח", cuisine: "גלידריית בוטיק", region: "אגם גארדה", price: "€2.5 – €5", dishes: ["פיסטוק סיציליאני", "שוקולד בלגי", "סורבה תות"], notes: "גלידת ערב נהדרת במהלך טיול בטיילת פסקיירה.", mapUrl: "https://maps.google.com/?q=Gelateria+La+Cremeria+del+Borgo+Peschiera", menuUrl: "https://www.google.com/search?q=Gelateria+La+Cremeria+del+Borgo+Peschiera+menu" },
@@ -971,7 +1019,7 @@
             { id: 35, day: 11, name: "Arte del Gelato", town: "אורטה סן ג'וליו", rating: 4.7, reviews: 1200, mealType: "גלידה/קינוח", cuisine: "גלידריית בוטיק", region: "אגם מאג'ורה", price: "€3 – €6", dishes: ["אגוזי לוז פיימונטה Nocciola IGP", "שוקולד מריר", "פיסטוק מלוח"], notes: "גלידריית בוטיק עטורת פרסים. חובה לטעום את טעם אגוזי הלוז!", mapUrl: "https://maps.google.com/?q=Arte+del+Gelato+Orta+San+Giulio", menuUrl: "https://www.google.com/search?q=Arte+del+Gelato+Orta+San+Giulio+menu" },
 
             // DAY 12
-            { id: 36, day: 12, name: "Volandia Flight Bistro", town: "מוזיאון וולנדיה (מלפנסה)", rating: 4.2, reviews: 600, mealType: "צהריים", cuisine: "אמריקאי / פאב", region: "אגם מאג'ורה", price: "€8 – €15", dishes: ["פוקאצ'ות וטוסטים חמים", "שניצלונים וצ'יפס", "פיצות אישיות"], notes: "בתוך מוזיאון התעופה, 3 דקות מסניף Noleggiare לפני החזרת הרכב.", mapUrl: "https://maps.google.com/?cid=15302196614407886475", menuUrl: "https://www.google.com/search?q=Volandia+Flight+Bistro+menu" },
+            { id: 36, day: 12, name: "MXP Terminal 1 Food Court", town: "מלפנסה טרמינל 1", rating: 4.0, reviews: 0, mealType: "צהריים", cuisine: "אמריקאי / פאב", region: "אגם מאג'ורה", price: "€10 – €18", dishes: ["סנדוויצ'ים", "פיצה בשדה", "קפה וחטיפים"], notes: "ארוחה קלה בשדה אחרי החזרת הרכב – אין זמן ל־Volandia לפני טיסת 13:05.", mapUrl: "https://maps.google.com/?q=Milan+Malpensa+Airport+Terminal+1", menuUrl: "https://www.google.com/search?q=Malpensa+Terminal+1+restaurants" },
 
             // EXTRA HIGH-QUALITY SPOTS (FOR FLEXIBILITY & VARIETY)
             { id: 37, day: 1, name: "Vecchio Mulino Beach Bar", town: "פסקיירה דל גארדה", rating: 4.6, reviews: 1750, mealType: "ערב", cuisine: "אמריקאי / פאב", region: "אגם גארדה", price: "€16 – €28", dishes: ["המבורגרים גורמה", "צ'יפס פריך", "קוקטיילים ושקיעה מול האגם"], notes: "שולחנות עץ ישירות על קו המים בפסקיירה מול נוף שקיעה פנורמי.", mapUrl: "https://maps.google.com/?q=Vecchio+Mulino+Beach+Peschiera", menuUrl: "https://www.google.com/search?q=Vecchio+Mulino+Beach+Peschiera+menu" },
