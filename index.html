@@ -78,7 +78,10 @@
                     <span>🚗</span> לוגיסטיקה וחניה
                 </button>
                 <button onclick="switchMainTab('gardaland')" id="tab-btn-gardaland" class="main-tab-btn px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 touch-link">
-                    <span>🎢</span> גארדלנד ו-ורונה
+                    <span>🎢</span> גארדלנד
+                </button>
+                <button onclick="switchMainTab('verona')" id="tab-btn-verona" class="main-tab-btn px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 touch-link">
+                    <span>🚆</span> רכבת לוורונה
                 </button>
                 <button onclick="switchMainTab('packing')" id="tab-btn-packing" class="main-tab-btn px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 touch-link">
                     <span>🎒</span> צ'ק ליסט וציוד
@@ -406,32 +409,116 @@
         </section>
 
         <section id="view-gardaland" class="space-y-4 hidden">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Gardaland Guide Card -->
-                <div class="bg-white p-5 rounded-3xl border border-stone-200 shadow-sm space-y-3">
-                    <h3 class="text-base font-bold text-stone-900 flex items-center gap-2">
-                        <span>🎢</span> טיפים זהב ליום המושלם בגארדלנד
-                    </h3>
-                    <ul class="text-xs text-stone-700 space-y-2 leading-relaxed list-disc list-inside">
-                        <li><strong>רכישת כרטיסים:</strong> חובה לרכוש אונליין מראש באתר <a href="https://www.gardaland.it" target="_blank" class="text-emerald-800 underline font-bold">gardaland.it ↗</a> (חיסכון של עד €15 לכרטיס לעומת הקופות).</li>
-                        <li><strong>מתקנים לקטנטנים:</strong> מתחם Peppa Pig Land, Fantasy Kingdom והרכבת Volaplano.</li>
-                        <li><strong>מתקנים משפחתיים:</strong> רכבת ההרים Mammut, מתחם Jumanji, והרפתקת אטלנטיס (Fuga da Atlantide).</li>
-                        <li><strong>מנוחה לסבים:</strong> מופע 4D ממוזג ומסעדת Saloon במתחם המערב הפרוע בישיבה מרווחת.</li>
-                    </ul>
+            <div class="bg-white p-4 sm:p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-stone-100 pb-3">
+                    <div>
+                        <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900">יום 4 • 14 בספטמבר (יום ב')</span>
+                        <h3 class="text-base sm:text-xl font-bold text-stone-900 mt-1.5">פארק גארדלנד (Gardaland): מדריך האקשן המשפחתי</h3>
+                        <p class="text-xs text-stone-500 mt-1">טבלת מתקנים, מגבלות גובה ומסלולים נפרדים להורים/ילדים ולסבים.</p>
+                    </div>
+                    <a href="https://www.gardaland.it" target="_blank" rel="noopener" class="inline-flex items-center gap-1 bg-red-700 hover:bg-red-800 text-white text-xs font-bold px-3 py-2 rounded-xl transition-all self-start touch-link">
+                        כרטיסים מוזלים באתר הרשמי ↗
+                    </a>
                 </div>
 
-                <!-- Verona Train Guide Card -->
-                <div class="bg-white p-5 rounded-3xl border border-stone-200 shadow-sm space-y-3">
-                    <h3 class="text-base font-bold text-stone-900 flex items-center gap-2">
-                        <span>🚆</span> ורונה ברכבת (אפס פקקים ודוחות ZTL)
-                    </h3>
-                    <ul class="text-xs text-stone-700 space-y-2 leading-relaxed list-disc list-inside">
-                        <li><strong>תחנת מוצא:</strong> <a href="https://maps.google.com/?cid=16391332882579879002" target="_blank" class="text-emerald-800 underline font-bold">Peschiera del Garda ↗</a> (3 דקות נסיעה מ-Bel Sito, חניה חופשית).</li>
-                        <li><strong>תחנת יעד:</strong> <a href="https://maps.google.com/?cid=6165276577923478457" target="_blank" class="text-emerald-800 underline font-bold">Verona Porta Nuova ↗</a> – נסיעה חלקה של 14 דקות בלבד ברכבות Trenitalia.</li>
-                        <li><strong>עלות:</strong> כ-€4.50 לכיוון למבוגר, ילדים מתחת לגיל 4 חינם, גילאי 4–11 בחצי מחיר.</li>
-                        <li><strong>מהתחנה לארנה:</strong> אוטובוס עירוני (קווים 11/12/13) או מונית קצרה של 5 דקות ישירות ל-Piazza Bra.</li>
-                    </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 text-xs sm:text-sm">
+                    <div class="bg-red-50/70 p-4 rounded-xl border border-red-200 space-y-2">
+                        <h4 class="font-bold text-red-950 flex items-center gap-1.5 text-sm">
+                            <span>🎢</span> מסלול אקסטרים (הורים וילדים):
+                        </h4>
+                        <ul class="space-y-1.5 text-red-900 text-xs">
+                            <li><strong>10:00:</strong> רצים ראשונים לרכבת <strong>Mammut</strong> (תור קצר בבוקר).</li>
+                            <li><strong>10:45:</strong> רכבת הצלילה האנכית <strong>Oblivion</strong> ורכבת <strong>Shaman</strong>.</li>
+                            <li><strong>14:30:</strong> מתקני מים מרעננים: <strong>Fuga da Atlantide</strong> ו-<strong>Jungle Rapids</strong>.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-emerald-50/70 p-4 rounded-xl border border-emerald-200 space-y-2">
+                        <h4 class="font-bold text-emerald-950 flex items-center gap-1.5 text-sm">
+                            <span>👵</span> מסלול נינוח (סבים וקטנטנים):
+                        </h4>
+                        <ul class="space-y-1.5 text-emerald-900 text-xs">
+                            <li><strong>רכבת פנורמית Transgardaland Express:</strong> סיור בישיבה נינוחה סביב הפארק.</li>
+                            <li><strong>אזור Peppa Pig Land:</strong> מתקנים מתונים וקרוסלת הסוסים ההיסטורית.</li>
+                            <li><strong>צהריים ממוזגים:</strong> מסעדת Saloon וצפייה במופעים באולמות הסגורים (מנוחה מלאה).</li>
+                            <li><strong>Gardaland SEA LIFE:</strong> סיור ממוזג ומישורי באקווריום הצמוד.</li>
+                        </ul>
+                    </div>
                 </div>
+
+                <div>
+                    <h4 class="font-bold text-stone-900 text-sm mb-2 flex items-center gap-1.5">
+                        <span>📏</span> טבלת מתקנים ומגבלות גובה
+                    </h4>
+                    <div class="overflow-x-auto custom-scrollbar rounded-xl border border-stone-200">
+                        <table class="w-full text-right text-xs border-collapse min-w-[560px]">
+                            <thead>
+                                <tr class="bg-stone-900 text-white font-bold">
+                                    <th class="p-2.5">שם המתקן</th>
+                                    <th class="p-2.5">מתחם</th>
+                                    <th class="p-2.5">מגבלת גובה</th>
+                                    <th class="p-2.5">מאפיינים וקהל יעד</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-stone-200 bg-white">
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Peppa Pig Land</td><td class="p-2.5">Fantasy</td><td class="p-2.5 text-emerald-700 font-bold">ללא מגבלה</td><td class="p-2.5">מתחם מונפש לקטנטנים עם סירות ורכבות קטנות.</td></tr>
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Transgardaland Express</td><td class="p-2.5">Fantasy</td><td class="p-2.5 text-emerald-700 font-bold">ללא מגבלה (בליווי)</td><td class="p-2.5">רכבת פנורמית היסטורית המקיפה את הפארק בישיבה.</td></tr>
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Mammut</td><td class="p-2.5">Adventure</td><td class="p-2.5 font-bold text-amber-700">מינימום 100 ס"מ</td><td class="p-2.5">רכבת הרים משפחתית מתונה ומלהיבה.</td></tr>
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Fuga da Atlantide</td><td class="p-2.5">Adventure</td><td class="p-2.5 font-bold text-amber-700">מינימום 110 ס"מ</td><td class="p-2.5">רכבת מים ענקית עם ירידות רטובות ותפאורה מרהיבה.</td></tr>
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Jungle Rapids</td><td class="p-2.5">Adventure</td><td class="p-2.5 font-bold text-amber-700">ליווי מתחת 130 ס"מ</td><td class="p-2.5">שיט אבובים במסלול נהר גועש בין מפלים.</td></tr>
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Shaman</td><td class="p-2.5">Adrenaline</td><td class="p-2.5 font-bold text-red-700">מינימום 120 ס"מ</td><td class="p-2.5">רכבת הרים קלאסית עם שני היפוכים מלאים.</td></tr>
+                                <tr class="hover:bg-stone-50"><td class="p-2.5 font-bold">Oblivion: The Black Hole</td><td class="p-2.5">Adrenaline</td><td class="p-2.5 font-bold text-red-700">מינימום 140 ס"מ</td><td class="p-2.5">רכבת צלילה אנכית בזווית 90 מעלות לחובבי אקסטרים.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <ul class="text-xs text-stone-700 space-y-1.5 list-disc list-inside bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                    <li><strong>רכישת כרטיסים:</strong> חובה אונליין באתר <a href="https://www.gardaland.it" target="_blank" rel="noopener" class="text-emerald-800 underline font-bold">gardaland.it ↗</a> (חיסכון של עד €15 לכרטיס).</li>
+                    <li><strong>ילדים מתחת ל־90 ס"מ:</strong> כניסה חינם.</li>
+                    <li><strong>חניה:</strong> חניון Gardaland הרשמי – רחב ומתאים לוואן ול־SUV.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="view-verona" class="space-y-4 hidden">
+            <div class="bg-white p-4 sm:p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <div class="border-b border-stone-100 pb-3">
+                    <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900">יום 6 • 16 בספטמבר (יום ד')</span>
+                    <h3 class="text-base sm:text-xl font-bold text-stone-900 mt-1.5">רכבת ישירה מפסקיירה לוורונה (כ־14 דקות נסיעה)</h3>
+                    <p class="text-xs text-stone-500 mt-0.5">הפתרון החכם: בלי פקקים, בלי חניה לוואן גבוה ובלי קנסות ZTL</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs sm:text-sm">
+                    <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                        <h4 class="font-bold text-stone-900 mb-1">🚉 תחנות וזמנים</h4>
+                        <p class="text-stone-700 text-xs leading-relaxed">
+                            מתחנת <a href="https://maps.google.com/?cid=16391332882579879002" target="_blank" rel="noopener" class="text-emerald-800 underline font-bold">Peschiera del Garda ↗</a>
+                            (3 דקות מ־Bel Sito) ישירות ל־
+                            <a href="https://maps.google.com/?cid=6165276577923478457" target="_blank" rel="noopener" class="text-emerald-800 underline font-bold">Verona Porta Nuova ↗</a>.
+                            רכבות כל 15–20 דקות, נסיעה כ־14 דקות.
+                        </p>
+                    </div>
+                    <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                        <h4 class="font-bold text-stone-900 mb-1">🎫 כרטיסים ועלות</h4>
+                        <p class="text-stone-700 text-xs leading-relaxed">
+                            כ־€4.50 לכיוון למבוגר. ילדים מתחת לגיל 4 חינם, גילאי 4–11 בחצי מחיר.
+                            רכישה באפליקציית Trenitalia / Trainline או במכונות בתחנה.
+                        </p>
+                    </div>
+                    <div class="bg-stone-50 p-3.5 rounded-xl border border-stone-200">
+                        <h4 class="font-bold text-stone-900 mb-1">🚕 מהתחנה לארנה</h4>
+                        <p class="text-stone-700 text-xs leading-relaxed">
+                            מונית רשמית (Radio Taxi Verona) כ־4–5 דקות ל־Piazza Bra (€8–€12),
+                            או אוטובוס עירוני קווים 11 / 12 / 13.
+                        </p>
+                    </div>
+                </div>
+
+                <ul class="text-xs text-stone-700 space-y-1.5 list-disc list-inside bg-emerald-50/80 p-3.5 rounded-xl border border-emerald-200">
+                    <li><strong>חניה:</strong> משאירים את הרכבים בחניון תחנת פסקיירה (פתוח ונוח לוואן).</li>
+                    <li><strong>בתוך ורונה:</strong> רק רגל / מונית / אוטובוס – אפס נהיגה באזורי ZTL.</li>
+                    <li><strong>אתר כרטיסים:</strong> <a href="https://www.trenitalia.com" target="_blank" rel="noopener" class="text-emerald-800 underline font-bold">trenitalia.com ↗</a></li>
+                </ul>
             </div>
         </section>
 
@@ -615,7 +702,8 @@
                     onlineUrl: "https://www.gardaland.it",
                     details: [
                         "כרטיס תאריכי אונליין עולה כ-€39–€44 לעומת מעל €50 בקופות.",
-                        "ילדים מתחת לגובה 90 ס\"מ נכנסים בחינם."
+                        "ילדים מתחת לגובה 90 ס\"מ נכנסים בחינם.",
+                        "📋 יש טאב נפרד \"גארדלנד\" עם טבלת מתקנים, מגבלות גובה ומסלולים להורים/סבים – כדאי לפתוח לפני היציאה."
                     ]
                 },
                 highlights: [
@@ -623,9 +711,10 @@
                     { icon: "💦", name: "Atlantide & Jungle Rapids", mapUrl: "https://maps.google.com/?cid=17565389622998341170", desc: "מתקני מים מרהיבים עם סירות ענק ואבובים עגולים במפלים גועשים." },
                     { icon: "🐷", name: "מתחם Peppa Pig Land", mapUrl: "https://maps.google.com/?cid=17565389622998341170", desc: "עולם קסום וצבעוני לקטנטנים עם בית פפה פיג, רכבות עדינות ועץ הקסם." }
                 ],
-                kids: "יום חלום לילדים! עשרות מתקנים, רכבות הרים, דמויות אהובות ומתקני מים מרעננים.",
+                kids: "יום חלום לילדים! עשרות מתקנים, רכבות הרים, דמויות אהובות ומתקני מים מרעננים. לפני היציאה – פתחו את הטאב הנפרד \"גארדלנד\" לטבלת גבהים ומסלולים.",
                 parking: "חניון גארדלנד הרשמי (Parcheggio Gardaland) – מוסדר ורחב לכל סוגי הרכבים.",
                 timeline: [
+                    { time: "לפני היציאה", desc: "📋 <button type='button' onclick=\"switchMainTab('gardaland')\" class='font-bold text-emerald-800 underline'>פתחו את טאב גארדלנד</button> – טבלת מתקנים, מגבלות גובה ומסלול אקסטרים / נינוח." },
                     { time: "09:20 - 09:45", desc: "נסיעה של 10 דקות מ-Bel Sito אל <a href='https://maps.google.com/?cid=17565389622998341170' target='_blank' class='font-bold text-emerald-800 underline'>חניון גארדלנד ↗</a> והליכה נוחה לשער." },
                     { time: "10:00", desc: "פתיחת שערי הפארק – כניסה מהירה בסריקת הברקוד מהטלפון ללא תור." },
                     { time: "10:00 - 13:00", desc: "מתקנים פופולריים בבוקר: רכבת ההרים Mammut, מתחם Jumanji, רכבת Volaplano ו-Fantasy Kingdom." },
@@ -692,7 +781,8 @@
                     onlineUrl: "https://www.trenitalia.com",
                     details: [
                         "נסיעה ישירה של 14 דקות מתחנת Peschiera לתחנת Verona Porta Nuova.",
-                        "אפס פקקים ואפס סכנת דוחות מאזורי ZTL בוורונה!"
+                        "אפס פקקים ואפס סכנת דוחות מאזורי ZTL בוורונה!",
+                        "📋 יש טאב נפרד \"רכבת לוורונה\" עם פירוט תחנות, כרטיסים והגעה לארנה – כדאי לפתוח לפני היציאה."
                     ]
                 },
                 highlights: [
@@ -700,9 +790,10 @@
                     { icon: "🌹", name: "מרפסת יוליה (Casa di Giulietta)", mapUrl: "https://maps.google.com/?cid=12739343362149811405", desc: "החצר הרומנטית המפורסמת מסיפור שייקספיר עם פסל הברונזה של יוליה." },
                     { icon: "⛲", name: "כיכר ארבה (Piazza delle Erbe)", mapUrl: "https://maps.google.com/?cid=12686888494921676602", desc: "הכיכר העתיקה והיפה ביותר בוורונה, מוקפת ארמונות מימי הביניים ודוכני שוק." }
                 ],
-                kids: "נסיעה מהנה וקצרה ברכבת איטלקית, גילוי אמפיתיאטרון ענק כמו של גלדיאטורים, וגלידת קינוח בכיכר ברה.",
+                kids: "נסיעה מהנה וקצרה ברכבת איטלקית, גילוי אמפיתיאטרון ענק כמו של גלדיאטורים, וגלידת קינוח בכיכר ברה. לפני היציאה – פתחו את הטאב הנפרד \"רכבת לוורונה\".",
                 parking: "אפס נהיגה בוורונה! חניה חופשית בתחנת הרכבת בפסקיירה (3 דקות מ-Bel Sito).",
                 timeline: [
+                    { time: "לפני היציאה", desc: "📋 <button type='button' onclick=\"switchMainTab('verona')\" class='font-bold text-emerald-800 underline'>פתחו את טאב רכבת לוורונה</button> – תחנות, כרטיסים, מוניות ואוטובוסים לארנה." },
                     { time: "09:30 - 09:45", desc: "נסיעה קצרה של 3 דקות מ-Bel Sito אל <a href='https://maps.google.com/?cid=16391332882579879002' target='_blank' class='font-bold text-emerald-800 underline'>תחנת הרכבת בפסקיירה ↗</a> (חניה פתוחה נוחה)." },
                     { time: "09:50 - 10:05", desc: "14 דקות נסיעה ישירה ברכבת אל תחנת <a href='https://maps.google.com/?cid=6165276577923478457' target='_blank' class='font-bold text-emerald-800 underline'>Verona Porta Nuova ↗</a>." },
                     { time: "10:10 - 10:30", desc: "נסיעה קצרה של 5 דקות באוטובוס קו 11/12/13 או מוניות ישירות אל <a href='https://maps.google.com/?cid=1084224738596637841' target='_blank' class='font-bold text-emerald-800 underline'>כיכר Bra והארנה ↗</a>." },
@@ -1034,7 +1125,7 @@
             document.querySelectorAll('.main-tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`tab-btn-${tabId}`).classList.add('active');
 
-            ['itinerary', 'restaurants', 'logistics', 'gardaland', 'packing'].forEach(id => {
+            ['itinerary', 'restaurants', 'logistics', 'gardaland', 'verona', 'packing'].forEach(id => {
                 const section = document.getElementById(`view-${id}`);
                 if (section) section.classList.add('hidden');
             });
