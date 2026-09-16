@@ -142,6 +142,9 @@
                 <button onclick="switchMainTab('gardaland')" id="tab-btn-gardaland" class="main-tab-btn px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 touch-link">
                     <span>🎢</span> גארדלנד
                 </button>
+                <button onclick="switchMainTab('bergamo')" id="tab-btn-bergamo" class="main-tab-btn px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 touch-link">
+                    <span>🚡</span> ברגמו
+                </button>
                 <button onclick="switchMainTab('verona')" id="tab-btn-verona" class="main-tab-btn px-3 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-stone-600 hover:bg-stone-100 transition-all whitespace-nowrap flex items-center gap-1.5 touch-link">
                     <span>🚆</span> רכבת לוורונה
                 </button>
@@ -546,6 +549,142 @@
                     <li><strong>ילדים מתחת ל־90 ס"מ:</strong> כניסה חינם.</li>
                     <li><strong>חניה:</strong> חניון Gardaland הרשמי – רחב ומתאים לוואן ול־SUV.</li>
                 </ul>
+            </div>
+        </section>
+
+        <!-- BERGAMO TAB -->
+        <section id="view-bergamo" class="space-y-4 hidden">
+            <div class="bg-white p-4 sm:p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <div class="border-b border-stone-100 pb-3">
+                    <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-purple-100 text-purple-900">יום 7 • 17 בספטמבר (יום ה')</span>
+                    <h3 class="text-base sm:text-xl font-bold text-stone-900 mt-1.5">🚡 ברגמו – העיר העליונה (Città Alta)</h3>
+                    <p class="text-xs text-stone-500 mt-0.5">עיר עתיקה מוקפת חומות ונציאניות (UNESCO), רכבל ציורי וכיכר מהיפות באירופה</p>
+                </div>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-2xl p-4">
+                    <h4 class="font-bold text-purple-900 text-sm mb-2">🗺️ למה ברגמו?</h4>
+                    <p class="text-xs text-purple-800 leading-relaxed">ברגמו נמצאת <strong>בדיוק על הדרך</strong> בין אגם גארדה לאגם מאג'ורה (על כביש A4). עצירה של שעה וחצי מוסיפה רק 30 דקות נהיגה ליום, ומאפשרת לראות אחת הערים העתיקות היפות ביותר באיטליה!</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-stone-50 rounded-2xl p-4">
+                        <h4 class="font-bold text-stone-800 text-sm mb-3">🚡 הרכבל (Funicolare)</h4>
+                        <table class="w-full text-xs">
+                            <tbody>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">ציון Tripadvisor</td><td class="py-1.5 font-bold text-stone-900">⭐ 4.5/5 (2,407 ביקורות)</td></tr>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">זמן נסיעה</td><td class="py-1.5 font-bold text-stone-900">2-3 דקות</td></tr>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">מחיר</td><td class="py-1.5 font-bold text-stone-900">€1.50 לכיוון</td></tr>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">שעות פעילות</td><td class="py-1.5 font-bold text-stone-900">07:00-00:30</td></tr>
+                                <tr><td class="py-1.5 text-stone-600">נגישות</td><td class="py-1.5 font-bold text-emerald-700">✅ נגיש לעגלות וכיסאות גלגלים</td></tr>
+                            </tbody>
+                        </table>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Funicolare+Bergamo+stazione+inferiore" target="_blank" class="inline-flex items-center gap-1 text-purple-700 hover:underline text-xs font-bold mt-2">📍 תחנה תחתונה במפה ↗</a>
+                    </div>
+                    
+                    <div class="bg-stone-50 rounded-2xl p-4">
+                        <h4 class="font-bold text-stone-800 text-sm mb-3">🅿️ חניון Piazza Libertà</h4>
+                        <table class="w-full text-xs">
+                            <tbody>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">מקומות</td><td class="py-1.5 font-bold text-stone-900">605 מקומות</td></tr>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">מחיר</td><td class="py-1.5 font-bold text-stone-900">€2.20/שעה, מקס €15/יום</td></tr>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">גובה מקסימלי</td><td class="py-1.5 font-bold text-orange-700">⚠️ 2.00 מ' (מתאים לוואן!)</td></tr>
+                                <tr class="border-b border-stone-200"><td class="py-1.5 text-stone-600">שעות פעילות</td><td class="py-1.5 font-bold text-stone-900">24/7</td></tr>
+                                <tr><td class="py-1.5 text-stone-600">מרחק לרכבל</td><td class="py-1.5 font-bold text-stone-900">7 דקות הליכה (400 מ')</td></tr>
+                            </tbody>
+                        </table>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Piazza+Liberta+Bergamo" target="_blank" class="inline-flex items-center gap-1 text-purple-700 hover:underline text-xs font-bold mt-2">📍 חניון במפה ↗</a>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4">
+                    <h4 class="font-bold text-amber-900 text-sm mb-3">🏛️ מה לראות בעיר העליונה (1.5 שעות)</h4>
+                    <div class="space-y-2 text-xs">
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-600">🏛️</span>
+                            <div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Vecchia+Bergamo" target="_blank" class="font-bold text-amber-900 hover:underline">Piazza Vecchia ↗</a>
+                                <span class="text-amber-800"> – "אחת הכיכרות היפות באירופה" (לה קורבוזיה). מזרקת קונטריני, בתי קפה וגלידריות.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-600">⛪</span>
+                            <div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Cappella+Colleoni+Bergamo" target="_blank" class="font-bold text-amber-900 hover:underline">קפלת קולאוני ↗</a>
+                                <span class="text-amber-800"> – יצירת מופת של הרנסנס האיטלקי, חזית משובצת שיש צבעוני.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-600">⛪</span>
+                            <div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Basilica+Santa+Maria+Maggiore+Bergamo" target="_blank" class="font-bold text-amber-900 hover:underline">בזיליקת סנטה מריה מג'ורה ↗</a>
+                                <span class="text-amber-800"> – פנים מפואר עם פרסקאות ושטיחי קיר.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-600">🏰</span>
+                            <div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Mura+Veneziane+Bergamo" target="_blank" class="font-bold text-amber-900 hover:underline">החומות הוונציאניות (UNESCO) ↗</a>
+                                <span class="text-amber-800"> – טיילת על החומות עם נוף פנורמי מדהים.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <span class="text-amber-600">🎡</span>
+                            <div>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Giardino+La+Crotta+Bergamo" target="_blank" class="font-bold text-amber-900 hover:underline">גן משחקים La Crotta ↗</a>
+                                <span class="text-amber-800"> – 3 דקות מהכיכר, מושלם לילדים!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-4">
+                    <h4 class="font-bold text-emerald-900 text-sm mb-3">👨‍👩‍👧‍👦 התאמה להרכב שלכם</h4>
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white rounded-xl p-3">
+                            <div class="font-bold text-stone-800 mb-1">👴👵 סבא וסבתא (75-80)</div>
+                            <div class="text-emerald-700 font-bold">✅ מצוין!</div>
+                            <div class="text-stone-600 mt-1">רכבל נגיש לחלוטין, יכולים לשבת בכיכר עם קפה בזמן שאחרים מסתובבים.</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-3">
+                            <div class="font-bold text-stone-800 mb-1">👨‍👩‍👧 הורים</div>
+                            <div class="text-emerald-700 font-bold">✅ מצוין!</div>
+                            <div class="text-stone-600 mt-1">עיר יפהפייה, תרבות, צילומים, קפה איטלקי אמיתי.</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-3">
+                            <div class="font-bold text-stone-800 mb-1">🧒 מתבגרים (13-17)</div>
+                            <div class="text-emerald-700 font-bold">✅ טוב</div>
+                            <div class="text-stone-600 mt-1">רכבל מגניב, גלידה, צילומים לאינסטגרם.</div>
+                        </div>
+                        <div class="bg-white rounded-xl p-3">
+                            <div class="font-bold text-stone-800 mb-1">👶 ילדים (4-10)</div>
+                            <div class="text-amber-600 font-bold">⚠️ בינוני</div>
+                            <div class="text-stone-600 mt-1">רכבל = כיף! אבל אחרי 45 דק' עלולים להשתעמם. יש גן משחקים.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 border border-red-200 rounded-2xl p-4">
+                    <h4 class="font-bold text-red-900 text-sm mb-2">⚠️ טיפים חשובים</h4>
+                    <ul class="text-xs text-red-800 space-y-1.5 list-disc list-inside">
+                        <li><strong>בסופ"ש:</strong> תור לרכבל יכול להגיע ל-30-40 דקות! אתם ביום חמישי (17.9) אז בסדר.</li>
+                        <li><strong>הציר המרכזי</strong> מהרכבל לכיכר מרוצף אבל שטוח – אפשרי עם כיסא גלגלים.</li>
+                        <li><strong>רחובות צדדיים</strong> כוללים מדרגות ושיפועים – לא מתאימים לניידות מוגבלת.</li>
+                        <li><strong>גלידריות מומלצות:</strong> La Marianna (ממציאי גלידת הסטרצ'טלה!) או Caffè del Tasso בכיכר.</li>
+                    </ul>
+                </div>
+
+                <div class="bg-stone-100 rounded-2xl p-4">
+                    <h4 class="font-bold text-stone-800 text-sm mb-3">📍 לינקים מהירים</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Parcheggio+Piazza+Liberta+Bergamo" target="_blank" class="inline-flex items-center gap-1 bg-white border border-stone-300 text-stone-700 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-stone-50">🅿️ חניון</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Funicolare+Bergamo+stazione+inferiore" target="_blank" class="inline-flex items-center gap-1 bg-white border border-stone-300 text-stone-700 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-stone-50">🚡 רכבל</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Vecchia+Bergamo" target="_blank" class="inline-flex items-center gap-1 bg-white border border-stone-300 text-stone-700 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-stone-50">🏛️ כיכר Piazza Vecchia</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cappella+Colleoni+Bergamo" target="_blank" class="inline-flex items-center gap-1 bg-white border border-stone-300 text-stone-700 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-stone-50">⛪ קפלת קולאוני</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Porta+San+Giacomo+Bergamo" target="_blank" class="inline-flex items-center gap-1 bg-white border border-stone-300 text-stone-700 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-stone-50">🏰 נוף מהחומות</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Giardino+La+Crotta+Bergamo" target="_blank" class="inline-flex items-center gap-1 bg-white border border-stone-300 text-stone-700 text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-stone-50">🎡 גן משחקים</a>
+                        <a href="https://www.visitbergamo.net" target="_blank" class="inline-flex items-center gap-1 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-lg hover:bg-purple-700">🌐 אתר התיירות הרשמי ↗</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -954,9 +1093,9 @@
             {
                 day: 7,
                 date: "17 בספטמבר (יום ה')",
-                title: "נסיעה לאגם מאג'ורה, ספארי פומביה וצ'ק-אין בבאבנו",
+                title: "ברגמו העתיקה, ספארי פומביה וצ'ק-אין בבאבנו",
                 region: "אגם מאג'ורה",
-                hours: { depart: "09:00", returnTime: "17:30", driveTotal: "כשעתיים וחצי נהיגה מחולקת בנוחות" },
+                hours: { depart: "08:30", returnTime: "17:30", driveTotal: "כ-3 שעות נהיגה מחולקת בנוחות" },
                 weather: {
                     temp: "24°C / 14°C",
                     condition: "בהיר ונוח לנסיעה ולספארי",
@@ -972,26 +1111,36 @@
                     ]
                 },
                 highlights: [
+                    { icon: "🚡", name: "ברגמו – העיר העליונה (Città Alta)", mapUrl: "https://www.google.com/maps/search/?api=1&query=Citta+Alta+Bergamo", desc: "עיר עתיקה מוקפת חומות ונציאניות (UNESCO), רכבל ציורי, כיכר Piazza Vecchia וקפלת קולאוני." },
                     { icon: "🦁", name: "ספארי פומביה (Safari Park)", mapUrl: "https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia", desc: "מסלול ספארי פראי ברכב הפרטי בין אריות, טיגריסים, ג'ירפות, זברות וקרנפים." },
                     { icon: "🏨", name: "צ'ק-אין ב-Elvezia בבאבנו", mapUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Elvezia+Baveno", desc: "מלון בוטיק משפחתי מקסים השוכן ישירות על טיילת באבנו מול האיים הבורומאיים." },
                     { icon: "⛵", name: "טיילת החוף הפסטורלית של באבנו", mapUrl: "https://www.google.com/maps/search/?api=1&query=Lungolago+Baveno", desc: "טיילת מישורית ונעימה מול מי האגם השקטים, רציף סירות עתיק וכיכר ציורית." }
                 ],
-                kids: "מפגש פנים אל פנים עם ג'ירפות וזברות מחלון הרכב, מתקני לונה פארק והתמקמות במלון מול המים.",
-                parking: "בספארי: חניון הפארק הפתוח; בבאבנו: חניונים ציבוריים פתוחים סמוכים למלון אלבזיה.",
+                kids: "נסיעה ברכבל לעיר העתיקה, גלידה בכיכר הכי יפה באיטליה, ואחר כך מפגש פנים אל פנים עם ג'ירפות וזברות מחלון הרכב בספארי!",
+                parking: "בברגמו: חניון Piazza Libertà (€2.20/שעה, 7 דק' הליכה לרכבל); בספארי: חניון הפארק הפתוח (חינם); בבאבנו: חניונים ציבוריים פתוחים סמוכים למלון.",
                 timeline: [
-                    { time: "08:00 - 09:00", desc: "🍳 ארוחת בוקר במלון Bel Sito – ארוחה אחרונה באגם גארדה. הכינו מזוודות!" },
-                    { time: "09:00 - 09:30", desc: "🏨 צ'ק-אאוט מ-Bel Sito, העמסת מזוודות לוואן ול-SUV. ודאו שלא שכחתם כלום בחדרים." },
-                    { time: "09:30 - 11:15", desc: "🚗 נסיעה של שעה ו-45 דקות (140 ק\"מ) על אוטוסטרדה A4 מערבה. יציאה ב-Pombia אל <a href='https://www.google.com/maps/search/?api=1&query=Parcheggio+Safari+Park+Pombia' target='_blank' class='font-bold text-emerald-800 underline'>חניון ספארי פארק פומביה ↗</a> – חניה חינמית בשער הכניסה." },
-                    { time: "11:15 - 11:30", desc: "🎫 רכישת כרטיסים בקופות: €24 למבוגר, €18 לילד, מתחת לגיל 3 חינם. הכרטיס כולל ספארי + פארק רגלי." },
-                    { time: "11:30 - 12:30", desc: "🦁 נסיעת ספארי מרתקת של כשעה ברכבים שלכם! מסלול של 6 ק\"מ בין <a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+lions' target='_blank' class='font-bold text-emerald-800 underline'>אריות, טיגריסים, ג'ירפות, זברות, קרנפים ופילים ↗</a>. חלונות סגורים באזור הטורפים!" },
-                    { time: "12:30 - 12:40", desc: "🚗 חניה ב<a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+parking+zoo' target='_blank' class='font-bold text-emerald-800 underline'>חניון הפארק הרגלי ↗</a> (בסוף מסלול הספארי)." },
-                    { time: "12:40 - 13:30", desc: "🍕 ארוחת צהריים ב<a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+restaurant' target='_blank' class='font-bold text-emerald-800 underline'>מסעדת הפארק ↗</a> – פיצות, פסטות וסנדוויצ'ים. ישיבה מוצלת." },
-                    { time: "13:30 - 14:45", desc: "🦜 סיור רגלי בפארק: מתחם הזוחלים, ציפורים אקזוטיות, קופים, <a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+luna+park' target='_blank' class='font-bold text-emerald-800 underline'>מתקני לונה-פארק לילדים ↗</a> ומגלשות." },
-                    { time: "14:45 - 15:00", desc: "🚗 יציאה מהפארק והתחלת נסיעה צפונה לאגם מאג'ורה." },
-                    { time: "15:00 - 15:50", desc: "🚗 נסיעה נופית של 50 דקות (55 ק\"מ) צפונה לאורך אגם מאג'ורה. נוף מרהיב של האגם והאלפים! יציאה ב-Baveno אל <a href='https://www.google.com/maps/search/?api=1&query=Parcheggio+Via+Sempione+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>חניון Via Sempione ↗</a> – חניון ציבורי חינמי, 3 דקות מהמלון." },
-                    { time: "15:50 - 16:00", desc: "🚶 הליכה של 3 דקות (200 מ') מהחניון אל <a href='https://www.google.com/maps/search/?api=1&query=Hotel+Elvezia+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>מלון Elvezia Boutique Hotel ↗</a>." },
-                    { time: "16:00 - 17:00", desc: "🏨 צ'ק-אין במלון Elvezia – מלון בוטיק משפחתי מקסים על טיילת באבנו מול האיים הבורומאיים. פריקת מזוודות והתארגנות." },
-                    { time: "17:00 - 19:00", desc: "🚶 טיול רגלי מישורי ומרגיע לאורך <a href='https://www.google.com/maps/search/?api=1&query=Lungolago+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>טיילת החוף של באבנו ↗</a> – נוף קסום לאיים הבורומאיים, רציף סירות עתיק וכיכר ציורית." },
+                    { time: "08:00 - 08:30", desc: "🍳 ארוחת בוקר מוקדמת במלון Bel Sito – ארוחה אחרונה באגם גארדה. הכינו מזוודות!" },
+                    { time: "08:30 - 09:00", desc: "🏨 צ'ק-אאוט מ-Bel Sito, העמסת מזוודות לוואן ול-SUV. ודאו שלא שכחתם כלום בחדרים." },
+                    { time: "09:00 - 10:00", desc: "🚗 נסיעה של שעה (94 ק\"מ) על אוטוסטרדה A4 מערבה. יציאה ב-Bergamo אל <a href='https://www.google.com/maps/search/?api=1&query=Parcheggio+Piazza+Liberta+Bergamo' target='_blank' class='font-bold text-emerald-800 underline'>חניון Piazza Libertà ↗</a> – 605 מקומות, €2.20/שעה, מקס €15/יום, גובה מקס 2 מ'." },
+                    { time: "10:00 - 10:10", desc: "🚶 הליכה של 7 דקות (400 מ') מהחניון אל <a href='https://www.google.com/maps/search/?api=1&query=Funicolare+Bergamo+stazione+inferiore' target='_blank' class='font-bold text-emerald-800 underline'>תחנת הרכבל התחתונה ↗</a> ברחוב Viale Vittorio Emanuele II." },
+                    { time: "10:10 - 10:15", desc: "🚡 עלייה ברכבל ההיסטורי (Funicolare) לעיר העליונה – 2 דקות של נוף מרהיב! כרטיס €1.50 לכיוון, נגיש לעגלות וכיסאות גלגלים." },
+                    { time: "10:15 - 10:20", desc: "🚶 הליכה של 3 דקות (200 מ') מתחנת הרכבל העליונה אל <a href='https://www.google.com/maps/search/?api=1&query=Piazza+Vecchia+Bergamo' target='_blank' class='font-bold text-emerald-800 underline'>כיכר Piazza Vecchia ↗</a> – 'אחת הכיכרות היפות באירופה' (לה קורבוזיה)." },
+                    { time: "10:20 - 10:40", desc: "⛪ סיור קצר ב<a href='https://www.google.com/maps/search/?api=1&query=Cappella+Colleoni+Bergamo' target='_blank' class='font-bold text-emerald-800 underline'>קפלת קולאוני ↗</a> – יצירת מופת של הרנסנס האיטלקי, ו<a href='https://www.google.com/maps/search/?api=1&query=Basilica+Santa+Maria+Maggiore+Bergamo' target='_blank' class='font-bold text-emerald-800 underline'>בזיליקת סנטה מריה מג'ורה ↗</a>." },
+                    { time: "10:40 - 11:00", desc: "☕🍦 הפסקת קפה וגלידה בכיכר – סבא וסבתא יושבים בנחת עם קפה ונוף, הילדים רצים סביב מזרקת קונטריני." },
+                    { time: "11:00 - 11:10", desc: "🏰 הליכה של 2 דקות (150 מ') אל <a href='https://www.google.com/maps/search/?api=1&query=Porta+San+Giacomo+Bergamo' target='_blank' class='font-bold text-emerald-800 underline'>שער Porta San Giacomo ↗</a> – נוף פנורמי מדהים מהחומות הוונציאניות (UNESCO)." },
+                    { time: "11:10 - 11:15", desc: "🚡 ירידה ברכבל חזרה לעיר התחתונה." },
+                    { time: "11:15 - 11:25", desc: "🚶 הליכה של 7 דקות חזרה לחניון Piazza Libertà." },
+                    { time: "11:25 - 12:45", desc: "🚗 נסיעה של שעה ו-20 דקות (112 ק\"מ) על A4 מערבה. יציאה ב-Novara Est, המשך על SS32 צפונה אל <a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+parcheggio' target='_blank' class='font-bold text-emerald-800 underline'>חניון ספארי פארק פומביה ↗</a> – חניה חינמית בשער הכניסה." },
+                    { time: "12:45 - 13:00", desc: "🎫 רכישת כרטיסים בקופות: €24 למבוגר, €18 לילד, מתחת לגיל 3 חינם. הכרטיס כולל ספארי + פארק רגלי." },
+                    { time: "13:00 - 14:00", desc: "🦁 נסיעת ספארי מרתקת של כשעה ברכבים שלכם! מסלול של 6 ק\"מ בין <a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+lions' target='_blank' class='font-bold text-emerald-800 underline'>אריות, טיגריסים, ג'ירפות, זברות, קרנפים ופילים ↗</a>. חלונות סגורים באזור הטורפים!" },
+                    { time: "14:00 - 14:10", desc: "🚗 חניה ב<a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+parking+zoo' target='_blank' class='font-bold text-emerald-800 underline'>חניון הפארק הרגלי ↗</a> (בסוף מסלול הספארי)." },
+                    { time: "14:10 - 14:50", desc: "🍕 ארוחת צהריים ב<a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+restaurant' target='_blank' class='font-bold text-emerald-800 underline'>מסעדת הפארק ↗</a> – פיצות, פסטות וסנדוויצ'ים. ישיבה מוצלת." },
+                    { time: "14:50 - 15:45", desc: "🦜 סיור רגלי בפארק: מתחם הזוחלים, ציפורים אקזוטיות, קופים, <a href='https://www.google.com/maps/search/?api=1&query=Safari+Park+Pombia+luna+park' target='_blank' class='font-bold text-emerald-800 underline'>מתקני לונה-פארק לילדים ↗</a> ומגלשות." },
+                    { time: "15:45 - 16:00", desc: "🚗 יציאה מהפארק והתחלת נסיעה צפונה לאגם מאג'ורה." },
+                    { time: "16:00 - 16:45", desc: "🚗 נסיעה נופית של 45 דקות (50 ק\"מ) צפונה לאורך אגם מאג'ורה. נוף מרהיב של האגם והאלפים! יציאה ב-Baveno אל <a href='https://www.google.com/maps/search/?api=1&query=Parcheggio+Via+Sempione+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>חניון Via Sempione ↗</a> – חניון ציבורי חינמי, 3 דקות מהמלון." },
+                    { time: "16:45 - 16:50", desc: "🚶 הליכה של 3 דקות (200 מ') מהחניון אל <a href='https://www.google.com/maps/search/?api=1&query=Hotel+Elvezia+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>מלון Elvezia Boutique Hotel ↗</a>." },
+                    { time: "16:50 - 17:30", desc: "🏨 צ'ק-אין במלון Elvezia – מלון בוטיק משפחתי מקסים על טיילת באבנו מול האיים הבורומאיים. פריקת מזוודות והתארגנות." },
+                    { time: "17:30 - 19:00", desc: "🚶 טיול רגלי מישורי ומרגיע לאורך <a href='https://www.google.com/maps/search/?api=1&query=Lungolago+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>טיילת החוף של באבנו ↗</a> – נוף קסום לאיים הבורומאיים, רציף סירות עתיק וכיכר ציורית." },
                     { time: "19:00 - 19:05", desc: "🚶 הליכה של 2 דקות (100 מ') מהטיילת אל <a href='https://www.google.com/maps/search/?api=1&query=Pizzeria+Sottosopra+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>Pizzeria Sottosopra ↗</a>." },
                     { time: "19:15 - 20:45", desc: "🍕 ארוחת ערב איטלקית – פיצות מעולות ב-Sottosopra או המבורגרים ב-<a href='https://www.google.com/maps/search/?api=1&query=Lupis+Pub+Baveno' target='_blank' class='font-bold text-emerald-800 underline'>Lupis Pub ↗</a> (2 דקות משם)." },
                     { time: "20:45 - 20:50", desc: "🚶 הליכה חזרה למלון Elvezia – לילה ראשון באגם מאג'ורה!" }
@@ -1593,7 +1742,7 @@
             document.querySelectorAll('.main-tab-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById(`tab-btn-${tabId}`).classList.add('active');
 
-            ['itinerary', 'restaurants', 'logistics', 'gardaland', 'verona', 'packing'].forEach(id => {
+            ['itinerary', 'restaurants', 'logistics', 'gardaland', 'bergamo', 'verona', 'packing'].forEach(id => {
                 const section = document.getElementById(`view-${id}`);
                 if (section) section.classList.add('hidden');
             });
