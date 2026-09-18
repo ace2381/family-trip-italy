@@ -264,20 +264,25 @@
                 <!-- SUB-SECTION 3: WEATHER & CLOTHING -->
                 <div id="day-sub-weather" class="space-y-3 pt-1 hidden">
                     <div class="bg-amber-50/70 p-4 rounded-2xl border border-amber-200/80 space-y-3">
-                        <div class="flex items-center justify-between">
+                        <div class="flex items-center justify-between flex-wrap gap-2">
                             <span class="font-bold text-xs sm:text-sm text-amber-950 flex items-center gap-1.5">
-                                <span>☀️</span> תחזית מזג אוויר וביגוד מומלץ:
+                                <span>☀️</span> תחזית מזג אוויר לאורך היום:
                             </span>
-                            <span id="day-weather-condition-badge" class="px-2.5 py-0.5 bg-amber-200 text-amber-900 rounded-full font-bold text-xs">
-                                בהיר ונעים
-                            </span>
+                            <div class="flex items-center gap-2">
+                                <span id="day-weather-condition-badge" class="px-2.5 py-0.5 bg-amber-200 text-amber-900 rounded-full font-bold text-xs">
+                                    בהיר ונעים
+                                </span>
+                                <span id="day-weather-live-badge" class="hidden px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full font-bold text-[10px] animate-pulse">
+                                    🔴 LIVE
+                                </span>
+                            </div>
                         </div>
-                        
-                        <!-- Hourly Weather Grid -->
-                        <div id="day-hourly-weather" class="grid grid-cols-4 gap-2 text-xs">
+
+                        <!-- Hourly Weather Grid - 6 hours -->
+                        <div id="day-hourly-weather" class="grid grid-cols-3 sm:grid-cols-6 gap-2 text-xs">
                             <!-- Populated by JS -->
                         </div>
-                        
+
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                             <div class="bg-white p-3 rounded-xl border border-amber-200">
                                 <strong class="block text-amber-900 mb-1">👕 לבוש מומלץ למשפחה:</strong>
@@ -287,6 +292,10 @@
                                 <strong class="block text-amber-900 mb-1">🎒 טיפ אריזה לתיק היומי:</strong>
                                 <p id="day-weather-packing-text" class="text-stone-700"></p>
                             </div>
+                        </div>
+                        
+                        <div id="day-weather-source" class="text-[10px] text-stone-400 text-center">
+                            מקור: Open-Meteo API • מתעדכן אוטומטית
                         </div>
                     </div>
                 </div>
@@ -1529,23 +1538,23 @@
         async function fetchDayWeather(region, dayNum) {
             const coords = weatherCoords[region] || weatherCoords['אגם גארדה'];
             const dateStr = tripDateStrings[dayNum];
-            
+
             try {
                 const response = await fetch(
                     `https://api.open-meteo.com/v1/forecast?latitude=${coords.lat}&longitude=${coords.lon}&hourly=temperature_2m,weather_code,precipitation_probability&daily=temperature_2m_max,temperature_2m_min,weather_code,precipitation_probability_max&start_date=${dateStr}&end_date=${dateStr}&timezone=Europe/Rome`
                 );
                 const data = await response.json();
-                
+
                 if (data.hourly && data.daily) {
-                    // Extract key hours: 8:00, 12:00, 16:00, 20:00
-                    const hours = [8, 12, 16, 20];
+                    // Extract key hours: 7:00, 9:00, 12:00, 15:00, 18:00, 21:00
+                    const hours = [7, 9, 12, 15, 18, 21];
                     const hourlyData = hours.map(h => ({
                         hour: h,
                         temp: Math.round(data.hourly.temperature_2m[h]),
                         code: data.hourly.weather_code[h],
                         rain: data.hourly.precipitation_probability[h]
                     }));
-                    
+
                     return {
                         isLive: true,
                         maxTemp: Math.round(data.daily.temperature_2m_max[0]),
@@ -1622,23 +1631,29 @@
                     <span id="day-weather-temp">${weather.maxTemp}°C / ${weather.minTemp}°C</span>
                     <span class="text-[9px] bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-full font-bold">LIVE</span>
                 `;
-                
+
                 conditionBadge.innerText = weatherConditions[weather.code] || 'לא ידוע';
                 
-                // Update hourly grid
+                // Show live badge
+                const liveBadge = document.getElementById('day-weather-live-badge');
+                if (liveBadge) liveBadge.classList.remove('hidden');
+
+                // Update hourly grid with 6 hours
                 const hourlyContainer = document.getElementById('day-hourly-weather');
                 if (hourlyContainer && weather.hourly) {
-                    const hourLabels = { 8: 'בוקר', 12: 'צהריים', 16: 'אחה"צ', 20: 'ערב' };
+                    const hourLabels = { 7: '07:00', 9: '09:00', 12: '12:00', 15: '15:00', 18: '18:00', 21: '21:00' };
+                    const hourDescriptions = { 7: 'בוקר מוקדם', 9: 'בוקר', 12: 'צהריים', 15: 'אחה"צ', 18: 'ערב', 21: 'לילה' };
                     hourlyContainer.innerHTML = weather.hourly.map(h => `
                         <div class="bg-white p-2 rounded-lg border border-amber-200 text-center">
-                            <div class="font-bold text-amber-900">${hourLabels[h.hour]}</div>
+                            <div class="font-bold text-amber-900 text-[11px]">${hourLabels[h.hour]}</div>
+                            <div class="text-[10px] text-stone-500">${hourDescriptions[h.hour]}</div>
                             <div class="text-2xl my-1">${weatherIcons[h.code] || '🌡️'}</div>
                             <div class="font-bold text-stone-900">${h.temp}°C</div>
-                            ${h.rain > 20 ? `<div class="text-[10px] text-blue-600">💧 ${h.rain}%</div>` : ''}
+                            ${h.rain > 20 ? `<div class="text-[10px] text-blue-600 font-medium">💧 ${h.rain}%</div>` : '<div class="text-[10px] text-stone-400">ללא גשם</div>'}
                         </div>
                     `).join('');
                 }
-                
+
                 // Update clothing recommendations based on actual weather
                 const recommendations = generateClothingRecommendation(weather);
                 if (recommendations) {
@@ -1655,10 +1670,14 @@
                 document.getElementById('day-weather-clothing-text').innerText = day.weather.clothing;
                 document.getElementById('day-weather-packing-text').innerText = day.weather.packingTip;
                 
+                // Hide live badge
+                const liveBadge = document.getElementById('day-weather-live-badge');
+                if (liveBadge) liveBadge.classList.add('hidden');
+
                 // Clear hourly grid
                 const hourlyContainer = document.getElementById('day-hourly-weather');
                 if (hourlyContainer) {
-                    hourlyContainer.innerHTML = '<p class="col-span-4 text-center text-stone-500">תחזית שעתית לא זמינה</p>';
+                    hourlyContainer.innerHTML = '<p class="col-span-6 text-center text-stone-500 py-4">תחזית שעתית לא זמינה עבור תאריך זה</p>';
                 }
             }
         }
